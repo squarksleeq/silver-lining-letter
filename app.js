@@ -887,7 +887,6 @@ async function renderLetterImage() {
     accent: "#7a91a0",
   };
   const brandFont = `500 25px ${fontFamilies.display}`;
-  const footerFont = `500 23px ${fontFamilies.body}`;
 
   function wrapText(text, font) {
     ctx.font = font;
@@ -1030,7 +1029,7 @@ async function renderLetterImage() {
   ctx.textAlign = "left";
   ctx.fillStyle = colors.accent;
   ctx.font = `600 23px ${fontFamilies.body}`;
-  ctx.fillText("A LETTER WRITTEN FOR YOU", paddingX, height - 104);
+  ctx.fillText("A LETTER WRITTEN FOR YOU TODAY", paddingX, height - 104);
 
   ctx.textBaseline = "top";
   layout.blocks.forEach((block, blockIndex) => {
@@ -1087,11 +1086,6 @@ async function renderLetterImage() {
   signoffLines.forEach((line, index) => {
     ctx.fillText(line, width - paddingX, layout.signoffY + index * Math.round(42 * layout.scale));
   });
-
-  ctx.textAlign = "left";
-  ctx.fillStyle = colors.accent;
-  ctx.font = footerFont;
-  ctx.fillText("A LITTLE LIGHT FOR YOUR DAY", paddingX, height - 104);
 
   return new Promise((resolve) => {
     canvas.toBlob((blob) => resolve(blob), "image/png");
