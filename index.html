@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091426">
+  <meta name="description" content="우주가 오늘 당신에게 보내는 다정한 별자리 편지.">
+  <title>Silver Lining Letter — A letter from the universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="starfield" aria-hidden="true">
+    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+    <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+  </div>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Silver Lining Letter 홈">
+        <span class="brand-name">Silver Lining Letter</span>
+        <span class="brand-tagline">A letter from the universe, just for you.</span>
+      </a>
+      <span class="header-mark" aria-hidden="true"></span>
+    </header>
+
+    <main>
+      <section class="sky-panel" aria-labelledby="today-heading">
+        <p class="eyebrow">YOUR CELESTIAL NOTE</p>
+        <h1 id="today-heading" class="today-date"></h1>
+        <div class="moon-visual" role="img" aria-label="오늘의 달 위상">
+          <span class="moon-disc" aria-hidden="true"></span>
+        </div>
+        <p class="moon-phase-name" id="moon-phase-name"></p>
+        <p class="moon-caption">A quiet light, finding its way to you.</p>
+        <p class="moon-method">달 위상은 평균 삭망월 기준 근삿값이며, 편지의 달 별자리는 실제 천체 위치가 아닌 상징 운세예요.</p>
+      </section>
+
+      <section id="input-screen" aria-label="생년월일 입력">
+        <div class="birthdate-panel">
+          <p class="eyebrow">A NOTE WRITTEN FOR YOU</p>
+          <h2 id="birthdate-heading">당신의 별자리를 알려주세요</h2>
+          <fieldset class="birthdate-fields">
+            <legend>생년월일</legend>
+            <div class="date-selects">
+              <label class="date-select-field">
+                <span>연도</span>
+                <select id="birth-year" autocomplete="bday-year" aria-label="생년월일 연도">
+                  <option value="">연도</option>
+                </select>
+              </label>
+              <label class="date-select-field">
+                <span>월</span>
+                <select id="birth-month" autocomplete="bday-month" aria-label="생년월일 월">
+                  <option value="">월</option>
+                  <option value="1">1월</option>
+                  <option value="2">2월</option>
+                  <option value="3">3월</option>
+                  <option value="4">4월</option>
+                  <option value="5">5월</option>
+                  <option value="6">6월</option>
+                  <option value="7">7월</option>
+                  <option value="8">8월</option>
+                  <option value="9">9월</option>
+                  <option value="10">10월</option>
+                  <option value="11">11월</option>
+                  <option value="12">12월</option>
+                </select>
+              </label>
+              <label class="date-select-field">
+                <span>일</span>
+                <select id="birth-day" autocomplete="bday-day" aria-label="생년월일 일" disabled>
+                  <option value="">일</option>
+                  <option value="1">1일</option>
+                  <option value="2">2일</option>
+                  <option value="3">3일</option>
+                  <option value="4">4일</option>
+                  <option value="5">5일</option>
+                  <option value="6">6일</option>
+                  <option value="7">7일</option>
+                  <option value="8">8일</option>
+                  <option value="9">9일</option>
+                  <option value="10">10일</option>
+                  <option value="11">11일</option>
+                  <option value="12">12일</option>
+                  <option value="13">13일</option>
+                  <option value="14">14일</option>
+                  <option value="15">15일</option>
+                  <option value="16">16일</option>
+                  <option value="17">17일</option>
+                  <option value="18">18일</option>
+                  <option value="19">19일</option>
+                  <option value="20">20일</option>
+                  <option value="21">21일</option>
+                  <option value="22">22일</option>
+                  <option value="23">23일</option>
+                  <option value="24">24일</option>
+                  <option value="25">25일</option>
+                  <option value="26">26일</option>
+                  <option value="27">27일</option>
+                  <option value="28">28일</option>
+                  <option value="29">29일</option>
+                  <option value="30">30일</option>
+                  <option value="31">31일</option>
+                </select>
+              </label>
+            </div>
+          </fieldset>
+          <input id="birthdate" name="birthdate" type="hidden" autocomplete="bday">
+          <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          <button id="fortune-button" class="primary-button" type="button">오늘의 편지 열기</button>
+          <button id="clear-birthdate-button" class="secondary-button" type="button">저장된 생년월일 지우기</button>
+        </div>
+      </section>
+
+      <section id="letter-screen" aria-label="오늘의 편지" hidden>
+        <section id="result" class="letter-area" aria-live="polite" aria-atomic="true">
+          <article class="letter-empty">
+            <p class="letter-salutation">Dear you,</p>
+            <p>오늘의 편지가 도착하기를 기다리고 있어요.</p>
+            <p class="empty-hint">생년월일을 알려주면 별들이 당신을 위한 이야기를 골라줄게요.</p>
+          </article>
+        </section>
+        <figure class="share-card-preview" id="share-card-preview" hidden>
+          <img id="share-card-preview-image" alt="오늘의 편지 9:16 세로 공유카드 미리보기">
+        </figure>
+        <div class="share-actions" id="share-actions" hidden>
+          <button type="button" id="save-image-button">이미지로 저장</button>
+          <button type="button" id="share-image-button">공유하기</button>
+        </div>
+        <button id="back-to-input-button" class="secondary-button return-button" type="button">
+          다시 선택하기
+        </button>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Written in the stars, held close by you.</p>
+    </footer>
+  </div>
+</body>
+</html>
