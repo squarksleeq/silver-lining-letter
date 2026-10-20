@@ -8,7 +8,7 @@
   <title>Silver Lining Letter — A letter from the universe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
@@ -25,20 +25,21 @@
     <header class="site-header">
       <a class="brand" href="./" aria-label="Silver Lining Letter 홈">
         <span class="brand-name">Silver Lining Letter</span>
-        <span class="brand-tagline">A letter from the universe, just for you.</span>
+        <span class="brand-tagline">오늘의 별자리 운세 편지</span>
       </a>
       <span class="header-mark" aria-hidden="true"></span>
     </header>
 
     <main>
-      <section class="sky-panel" aria-labelledby="today-heading">
-        <p class="eyebrow">YOUR CELESTIAL NOTE</p>
-        <h1 id="today-heading" class="today-date"></h1>
+      <section class="sky-panel" aria-labelledby="hero-heading">
+        <p class="eyebrow">YOUR DAILY HOROSCOPE</p>
+        <h1 id="hero-heading" class="hero-title">오늘의 별자리 운세</h1>
+        <p id="today-heading" class="today-date"></p>
         <div class="moon-visual" role="img" aria-label="오늘의 달 위상">
           <span class="moon-disc" aria-hidden="true"></span>
         </div>
         <p class="moon-phase-name" id="moon-phase-name"></p>
-        <p class="moon-caption">A quiet light, finding its way to you.</p>
+        <p class="moon-caption">생년월일을 선택하고 오늘의 편지를 만나보세요.</p>
         <p class="moon-method">달 위상은 평균 삭망월 기준 근삿값이며, 편지의 달 별자리는 실제 천체 위치가 아닌 상징 운세예요.</p>
       </section>
 
@@ -131,7 +132,7 @@
           <img id="share-card-preview-image" alt="오늘의 편지 9:16 세로 공유카드 미리보기">
         </figure>
         <div class="share-actions" id="share-actions" hidden>
-          <button type="button" id="save-image-button">이미지로 저장</button>
+          <button type="button" id="save-image-button">이미지 저장</button>
           <button type="button" id="share-image-button">공유하기</button>
         </div>
         <button id="back-to-input-button" class="secondary-button return-button" type="button">
@@ -144,5 +145,22 @@
       <p>Written in the stars, held close by you.</p>
     </footer>
   </div>
+  <article id="share-card-template" class="share-card-template" aria-hidden="true">
+    <header class="share-card-header">
+      <span id="share-card-sign-symbol" class="share-card-sign-symbol"></span>
+      <div class="share-card-heading">
+        <p id="share-card-sign" class="share-card-sign"></p>
+        <p id="share-card-date" class="share-card-date"></p>
+      </div>
+    </header>
+    <div class="share-card-divider"></div>
+    <main class="share-card-message">
+      <p id="share-card-quote" class="share-card-quote"></p>
+    </main>
+    <footer class="share-card-footer">
+      <p class="share-card-signoff">With starlight, The Universe</p>
+      <p class="share-card-brand">Silver Lining Letter</p>
+    </footer>
+  </article>
 </body>
 </html>
