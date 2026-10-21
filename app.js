@@ -36,27 +36,7 @@ const fortunes = {
     "꾸준함은 눈에 보이지 않게 쌓이다가 어느 날 문이 돼. 오늘은 그 문 앞 한 칸이야.",
     "한꺼번에 붙든 일들이 손에서 미끄러져. 하나씩 내려놓으면 다시 잡을 수 있어.",
     "잘해내는 사람에게도 저녁은 와. 일찍 덮은 노트가 내일의 너를 도울 거야.",
-    "누가 알아주지 않아도 네가 쌓은 날들은 사라지지 않아. 오늘 쌓은 한 칸을 인정해줘.",
-    "다리미 위에 남은 온기가 아직 살아 있어. 오늘은 그걸 대라고 말해 보자.",
-    "계단참에 놓인 종이박스는 오늘의 과제야. 박스 하나만 먼저 열어봐.",
-    "서류 봉투의 매듭이 꽉 묶여 있었어. 풀리는 데는 오래 안 걸려.",
-    "벽시계 바늘이 이미 한 바퀴를 돌았어. 그래도 네 몫은 남아 있어.",
-    "안전모 끈이 턱 아래까지 늘어졌어. 이제 고개를 들고 일해도 돼.",
-    "장부에 남은 빈 칸은 어제의 너를 기다려. 오늘은 한 줄만 채워.",
-    "현관 열쇠가 아직 주머니에 있어. 그만큼 아직 돌아갈 곳이 남아 있지.",
-    "무게추가 천천히 내려앉았네. 오늘은 다 받쳐주지 않아도 돼.",
-    "정문의 불빛은 네 발자국을 세고 있어. 오늘도 한 줄 늘어났어.",
-    "책상 위 영수증 뭉치가 한 줌 높아졌어. 가장 위 한 장만 분리해 보자.",
-    "명함 뒷면에 적힌 첫 약속이 남아 있어. 오늘은 그 사람에게 안부를 전하자.",
-    "화성의 불씨가 흙 위에서 천천히 식어 가. 네 몫의 일도 그렇게 식히면 돼.",
-    "사다리는 밑을 봐야 오른다. 오늘은 첫 발판만 확인해 보자.",
-    "비상구 표지 하나만 눈에 담아둬. 급할 때 방향이 정해져 있으면 마음이 놓여.",
-    "월요일부터 쌓인 먼지가 층이 되어 있어. 한 층만 닦아내 보자.",
-    "기둥 그림자가 오후에 좀 짧아져. 네 그림자도 오늘은 조금 가벼워졌어.",
-    "온도계가 실내를 맨날 재고 있어. 오늘은 기온이 아니라 네 박자만 재자.",
-    "긴 노트의 여백은 미뤄둔 답을 기다려. 한 줄만 적어두자.",
-    "게시판에 새 종이 한 장이 붙었어. 네 이름 옆 빈 칸도 함께 확인하자.",
-    "달빛이 복도 끝 계단참을 비췄어. 오늘은 그 자리를 한 번만 지나가 보자."
+    "누가 알아주지 않아도 네가 쌓은 날들은 사라지지 않아. 오늘 쌓은 한 칸을 인정해줘."
   ],
   "물병자리": [
     "마지막 버스는 너를 두고 떠나도 괜찮다고 말해. 걸어서 집에 가는 길에 좋은 생각이 올 거야.",
@@ -78,27 +58,7 @@ const fortunes = {
     "취향을 변명으로 포장하지 마. 좋아한다는 말이면 충분한 날이 있어.",
     "혼자 걷는 속도도 좋아. 기다리는 사람 앞에선 시계를 데려가자.",
     "예상 밖의 답을 만나면 서둘러 지나치지 마. 낯섦이 질문을 바꿔 줄지도 몰라.",
-    "상상은 멀리 갔네. 달력 한 귀퉁이에 돌아올 시각을 적어 두자.",
-    "외계행성 표지판이 공중에 떠 있어. 표지판만 읽고 지나가지 말자.",
-    "너의 설명서는 아직 목차뿐이야. 첫 장을 펼칠 용기부터 챙겨.",
-    "금속 통 안에서 우주음이 나고 있어. 뚜껑은 조금만 열어보자.",
-    "일정에 없던 빈칸이 오늘 생겼어. 그 빈칸을 먼저 채워 보자.",
-    "수신이 안 잡히던 주파수가 갑자기 살아났어. 신호를 한 번만 보내봐.",
-    "우주복의 소매에 먼지가 쌓였어. 오늘은 한 번 털어 볼까.",
-    "지도에 없는 여백이 제일 넓어. 그 여백에 네 이름을 적어둬.",
-    "이상한 색의 꽃이 길가에 피었어. 사진 한 장만 찍어 두자.",
-    "잠금장치가 딸깍 소리를 내며 물러났어. 조금만 더 열어 볼래?",
-    "별 관측 기록지에 오늘 날짜가 비어 있어. 네 기록으로 채워 보자.",
-    "다른 행성의 안내 방송이 새로 깔렸어. 볼륨은 낮춰 둬.",
-    "눈에 익지 않은 색이 오늘은 유난히 눈에 띄어. 하나 골라 이름 붙여 보자.",
-    "높이 올라가니 지평선이 낮게 깔렸어. 오늘은 새로 보이는 것만 적자.",
-    "문장 없는 쪽지에는 그림만 남아 있어. 네 그림 하나를 더해 보자.",
-    "시간이 느리게 흐르는 방이 있어. 문을 닫고 잠깐 머물러.",
-    "낯선 향내가 계단을 올라왔어. 계단 하나만 더 올라가 보자.",
-    "버려진 라디오가 아직 잡음을 내고 있어. 주파수 하나만 찾아보자.",
-    "도면의 빈 모서리는 언젠가 채워져. 오늘은 선 하나만 그어 보자.",
-    "별이 머문 유리창이 금이 갔어. 손끝으로 닿을 거리만 확인하자.",
-    "이상한 냄새의 근처엔 흔적도 남아 있어. 코를 조금만 가까이 대보자."
+    "상상은 멀리 갔네. 달력 한 귀퉁이에 돌아올 시각을 적어 두자."
   ],
   "물고기자리": [
     "잠들기 직전의 생각이 하루의 진짜 결론이야. 오늘 밤은 그 생각에게 이불을 덮어줘.",
@@ -120,27 +80,7 @@ const fortunes = {
     "마음이 흔들리는 건 아직 살아서 움직인다는 뜻이야. 물결이 잦아들 때까지 기다려도 돼.",
     "네 직감은 속삭임이야. 큰 소리로 말하지 않아도 사실을 한 번 확인하면 더 단단해져.",
     "오늘은 꿈과 현실 사이 문턱에 앉아 있어도 좋아. 발끝만 현실에 걸쳐 두자.",
-    "꿈은 멀리 가도 괜찮아. 장바구니에 담기 전에는 가격표 한 번만 읽어 보자.",
-    "안개가 걷히면 남는 건 물 위의 흔적뿐이야. 오늘은 흔적만 따라가자.",
-    "해변의 모래가 밤새 문장을 바꿨어. 네 발자국은 아직 그대로야.",
-    "노래방이 문을 닫으면 우주가 조용해져. 이어폰 볼륨만 조금 낮춰.",
-    "종이 한 장의 낱말 하나가 네 이름을 불러. 그 단어만 메모해 두자.",
-    "비눗방울 안에 잠긴 골목이 보여. 안쪽은 그냥 상상일지도 몰라.",
-    "새벽 첫 기차는 아직 선로에 없어. 시간표는 천천히 읽어 보자.",
-    "잠든 도시의 창문 하나만 불이 켜져 있어. 그 불을 따라 시선을 둬.",
-    "몸시계가 자꾸 느리게 가. 오늘은 시계를 보지 말고 한 일만 해.",
-    "호수 위 반영이 물살과 반대로 흔들려. 잠시 멈춰서 바라만 보자.",
-    "마법사의 모자가 너무 커서 혼자 저고리야. 한 번만 만져 보자.",
-    "다리는 물 위에 떠 있었어. 모래 위로 내리는 걸 서서 지켜봐.",
-    "아무도 없는 백화점에서 아이스크림이 녹고 있어. 시계 하나만 보고 가자.",
-    "지하철이 반대 방향으로 지나가. 내릴 준비를 조금만 더 해두자.",
-    "해가 지는 쪽에서 시계가 일곱을 가리켜. 이제 불을 켤 시간이다.",
-    "사진 한 장의 구석에 손이 찍혀 있어. 그 손의 주인을 오늘은 기억해.",
-    "구름 위의 성이 천천히 스쳐 지나갔어. 그림 대신 한 줄을 적어 둬.",
-    "낮잠 끝의 알람이 멀리서 울렸어. 눈을 뜨는 데 열 초면 충분해.",
-    "파도 소리가 방 안까지 밀려 왔어. 발가락으로 물결을 한 번 쫓아 보자.",
-    "입이 아픈 만큼 말은 안 남았네. 오늘은 글로 대신하자.",
-    "달빛이 파도 위에 일곱 줄을 그었어. 오늘은 셋째 줄까지만 따라가자."
+    "꿈은 멀리 가도 괜찮아. 장바구니에 담기 전에는 가격표 한 번만 읽어 보자."
   ],
   "양자리": [
     "화성이 네 등을 먼저 떠밀었어. 어디로 뛰는지만 보고 계속 뛰어.",
@@ -162,27 +102,7 @@ const fortunes = {
     "급한 마음이 앞장서도 길은 너를 기다려. 신호등 색깔만 보고 건너자.",
     "불꽃은 크지 않아도 길을 비춰. 오늘은 작은 일 하나를 끝까지 해봐.",
     "먼저 손드는 사람은 늘 너야. 오늘은 손을 든 뒤에 질문까지 들어보자.",
-    "달려온 만큼 그림자도 길어졌어. 저녁엔 그 그림자랑 천천히 걸어줘.",
-    "신호등이 초록불을 오래 붙잡아 줘. 오늘은 그 초록불을 믿고 건너가.",
-    "성냥불이 세 번 만에 붙었어. 세 번째에도 네가 붙이긴 했네.",
-    "뛰다가 넘어진 뒤 몸이 훨씬 가벼워졌어. 다시 설 줄은 금방이야.",
-    "출발신호가 늦게 울렸어. 너는 벌써 앞이야.",
-    "불꽃이 두 줄로 갈라졌어. 어느 쪽이든 너는 움직이고 있네.",
-    "문 앞의 소리가 멀리서 들렸어. 기회는 보통 갑자기 오지.",
-    "계단이 하나 더 있었네. 한 단은 내가 대신 볼게.",
-    "손잡이에 온기가 남아 있어. 방금 누군가 나갔다는 증거야.",
-    "화분 속 불꽃이 바람에 흔들려. 오늘은 화분을 창가 쪽으로 옮겨 보자.",
-    "뛰는 바람이 머리카락을 다 날려. 네 생각이 앞서 있다는 뜻이야.",
-    "경고등이 켜졌어도 멈추진 않았네. 한 번 더 밟아 볼래?",
-    "마지막 코스가 남아 있으면 달리는 의미가 있어. 오늘은 그 한 코스만.",
-    "유난히 빠른 발이 하나 더 생겼어. 네 안에 자라는 중이야.",
-    "폭죽이 터진 자리에는 어둠이 남지. 오늘은 그 빈자리를 써도 돼.",
-    "잠긴 자전거가 혼자 서 있어. 잠금을 풀고 가방 하나만 걸어 보자.",
-    "정류장의 노선도가 바뀌었어. 새 노선은 네 쪽을 지나가.",
-    "불이 붙은 성냥은 버리는 게 아깝지 않아. 오늘은 남은 성냥을 아껴 둬.",
-    "뛰면서 본 풍경은 걸으면서 못 봐. 오늘은 걸음도 하나 섞어 보자.",
-    "시작이 세 번째에 왔어도 늦진 않았어. 오늘은 그것만 기억해.",
-    "결승선이 낮게 걸려 있었어. 오늘은 그 선 앞까지만 달리자."
+    "달려온 만큼 그림자도 길어졌어. 저녁엔 그 그림자랑 천천히 걸어줘."
   ],
   "황소자리": [
     "햇볕에 데워진 돌계단이 너를 기다려. 천천히 올라도 좋아, 물병은 챙기고.",
@@ -204,27 +124,7 @@ const fortunes = {
     "소파와의 대화가 길어졌네. 마무리 인사를 하고 창가로 자리를 옮겨봐.",
     "네 손길이 닿은 물건들은 오래 가. 오늘은 그중 하나를 닦아주자.",
     "느긋함은 네 재능이야. 약속 시간만 시계에 한 번 적어두자.",
-    "단맛이 필요한 저녁이야. 작은 디저트 하나는 오늘의 정당한 계획이야.",
-    "화분이 오늘은 물을 더 마시길 바라네. 그만큼은 지금 줘도 돼.",
-    "빵집 유리에 김이 맺혔어. 문을 열고 따뜻한 쪽으로 가 보자.",
-    "구운 냄새가 골목 끝까지 번졌어. 오늘은 그 냄새를 따라가도 돼.",
-    "접시 위 남은 한 조각이 아깝지 않아. 오늘은 그걸로 저녁을 마무리해.",
-    "무거운 냄비를 들고는 우주가 흔들려. 오늘은 가벼운 쪽을 골라 보자.",
-    "감나무 뿌리가 돌계단 밑으로 이어져. 물 한 잔만 뿌려줄까?",
-    "저녁 햇살이 식탁 위에서 천천히 식어 가. 음식도 천천히 먹어.",
-    "카드값 계산대 위에 동전이 두 개 더 있어. 하나는 네 몫으로 둬 보자.",
-    "책꽂이 밑에 잠든 연필이 있네. 오늘은 그걸 깎아 볼까?",
-    "주걱이 저녁을 기다리는 동안 혼자 쉬었어. 주방 불만 켜 보자.",
-    "사과 하나가 식탁 위에서 자색으로 익어 가. 자를지는 오늘 정해.",
-    "온돌에 밥을 데웠던 온기가 남아 있어. 오늘은 그걸 믿고 앉아 있어.",
-    "길 잃은 고양이가 우리 집을 지나가네. 물그릇 하나만 놔두자.",
-    "냉장고 문에 메모가 붙어 있어. 유통기한 하루 남은 반찬이야.",
-    "바람이 닿는 창가 자리가 비어 있어. 오늘은 그 자리에 앉아 보자.",
-    "반죽이 조금 부풀었어. 오늘은 기다리는 동안 의자 하나만 닦아 두자.",
-    "예약석 종이 두 개가 남았네. 그 종이 하나를 네 이름으로 바꿔.",
-    "맛집 간판이 켜졌어. 오늘은 미리 식당에 자리 하나 잡아 두자.",
-    "설거지 후 물방울이 마지막으로 떨어져. 그 소리로 오늘을 닫아.",
-    "솥 뚜껑을 열면 김이 천장으로 올라가. 오늘은 그 김을 따라 천장을 보자."
+    "단맛이 필요한 저녁이야. 작은 디저트 하나는 오늘의 정당한 계획이야."
   ],
   "쌍둥이자리": [
     "수성이 네 혀끝에서 먼저 출발했어. 약속은 말한 만큼만 지키자, 진짜로.",
@@ -232,7 +132,7 @@ const fortunes = {
     "말 많은 골목의 메아리가 네 목소리를 닮았네. 오늘은 메아리 말고 진짜 대답을 들어봐.",
     "읽지 않은 메시지 숫자가 마음속 숫자와 같아졌어. 하나만 열어서 답하면 숫자가 줄어.",
     "오늘 떠오른 생각은 셋인데 손은 두 개뿐이야. 세 번째는 메모장에 맡겨.",
-    "이야기가 세 번 바뀌었네, 첫 이야기는 어디 갔어? 마지막엔 꼭 데려오자.",
+    "이야기가 세 번 바뀌었네, 첫 이야기는 어디 갔어? 마지막에 꼭 데려오자.",
     "재미있는 소식이 손끝에서 근질거려. 단톡방에 올리기 전에 한 번만 확인하자.",
     "질문이 꼬리에 꼬리를 물고 오는 날이야. 하나만 잡고 끝까지 파봐.",
     "네 농담이 오늘은 방 안을 환하게 해. 웃음 끝에 다정한 한마디만 얹어줘.",
@@ -246,27 +146,7 @@ const fortunes = {
     "두 가지를 동시에 하면 둘 다 반만 돼. 하나를 먼저 끝내는 반전, 어때?",
     "친구와 나눈 한마디가 밤새 맴돌 거야. 먼저 안부를 보내는 쪽이 되어봐.",
     "오늘은 말솜씨보다 침묵이 더 많은 걸 전해. 삼 초만 기다렸다 대답해봐.",
-    "수다는 네 마법이야. 그 마법이 약속 시간에도 통하는지 확인해 보자.",
-    "메아리가 두 목소리로 갈라졌어. 오늘은 네 목소리만 골라 보자.",
-    "새로고침을 세 번 눌렀어. 그럼에도 답은 안 왔지.",
-    "말하는 동안 손이 먼저 움직였어. 오늘은 손의 말을 믿어 보자.",
-    "쪽지에는 한 줄로 끝나지 않는 말이 있었어. 줄 하나를 늘려 써 보자.",
-    "두 개의 대화가 겹쳐서 시끄러웠어. 오늘은 하나만 열어 둬.",
-    "짧은 문장이 제일 오래 남더라. 오늘은 딱 한 줄만 보내 볼까?",
-    "입 모양이 먼저 웃었어. 말은 그 뒤에 천천히 따라가도 돼.",
-    "듣기만 했던 대화가 오늘은 길을 냈어. 고마움을 한 번 전하자.",
-    "이해가 안 되면 또 물어보면 돼. 질문은 재고가 아니야.",
-    "세 가지 말 중 하나만 골라. 고른 쪽이 오늘의 너를 말해 주지.",
-    "말이 너무 앞서서 주인을 잃었어. 오늘은 한 박자 쉬고 말해.",
-    "메모장에 적어 둔 말이 오늘 울렸어. 적어 둔 쪽이 옳았나 봐.",
-    "목소리를 낮추면 말이 더 멀리 가. 오늘은 낮은 톤을 써 보자.",
-    "곧바로 답을 못 한 이유가 있었어. 그 이유를 한 줄로 적어 두자.",
-    "한 사람에게만 보내는 말은 조금 더 정직해. 오늘은 그 사람만 골라.",
-    "앞말이 뒤말을 덮지 않게 해야 해. 오늘은 끝을 끝까지 말해 보자.",
-    "웃음소리가 제일 빠른 답이었어. 그 속도도 오늘은 믿어 보자.",
-    "잠깐 멈춘 사이 대화가 더 멀리 갔어. 기다림도 말의 일부야.",
-    "고치지 않은 첫 문장이 제일 정확했어. 원본을 한 번 더 읽어 보자.",
-    "대화창이 두 개나 떠 있어. 오늘은 하나를 닫고 말해 보자."
+    "수다는 네 마법이야. 그 마법이 약속 시간에도 통하는지 확인해 보자."
   ],
   "게자리": [
     "밀물은 모래성을 탓하지 않아. 오늘 무너진 마음도 탓하지 말자.",
@@ -288,27 +168,7 @@ const fortunes = {
     "조개가 입을 다무는 건 약해서가 아니라 소중해서야. 열고 싶을 때 열면 돼.",
     "오늘 하루 정말 많이 챙겼어. 이제 네 차례니까 이불부터 챙기자.",
     "따뜻한 말을 남에게만 아껴 두지 마. 거울 앞에서 잘하고 있다고 한마디 건네봐.",
-    "마음에도 물이 필요해. 오늘은 물 한 잔과 한숨 한 번으로 시작하자.",
-    "집안의 조용함이 오늘은 안쓰럽지 않았어. 그대로 있어도 괜찮아.",
-    "조개껍데기를 모으던 어린 시절이 아직 손에 남아 있어. 그 기억을 펴 보자.",
-    "그릇이 안에서 한 번 식었어. 식은 국물을 한 모금만 떠 보자.",
-    "달이 집으로 오는 길은 하필 창밖이야. 커튼을 한 번만 열어 보자.",
-    "누군가 네 이름으로 온 전화를 못 받았네. 내일 다시 걸어도 돼.",
-    "밀물 자국이 방바닥에 남아 있어. 흔적만 보고 괜히 안심하자.",
-    "불을 끄면 방이 더 따뜻해져. 오늘은 어둠을 조금만 허용해.",
-    "식탁 위 김이 천천히 사라져. 네가 남긴 시간의 모양이야.",
-    "새 달 첫 밤이 창에 젖어 있네. 손수건 하나만 널어 두자.",
-    "무모하지 않은 배려가 오래 남아. 오늘은 그 배려를 네가 받아도 돼.",
-    "유리병에 닭힌 김이 부드러워져. 마른 수건으로 한 번 닦아 보자.",
-    "해가 물러나고도 온기가 남아 있어. 오늘은 그 온기를 믿고 자자.",
-    "가슴 안의 숨이 조금 짧아졌어. 네 안에 자리 하나를 더 내주자.",
-    "차가 식기 전에 한 잔만 마셔. 그 시간이 오늘의 온도야.",
-    "뒷뜰에 내일의 물자가 준비돼 있어. 오늘은 물을 한 번만 뿌려.",
-    "조개껍데기 모양의 달이 하나 더 떴어. 그것도 세어 보자.",
-    "차가운 손이 데워지는 데 오래 걸렸네. 오늘은 천천히 데워.",
-    "포개둔 담요가 오늘은 한 겹 부족해. 그만큼 따뜻한 사람이 옆에 있다는 뜻이야.",
-    "집으로 걸어오는 길의 불빛이 반씩만 보여. 오늘은 그 반만 믿고 가.",
-    "문틈으로 새벽 바람이 조금씩 밀려 들어와. 오늘은 문을 닫고 안쪽에 있어."
+    "마음에도 물이 필요해. 오늘은 물 한 잔과 한숨 한 번으로 시작하자."
   ],
   "사자자리": [
     "불 꺼진 무대에도 네가 서던 자리는 남아 있어. 오늘 조명은 네가 직접 켜.",
@@ -330,27 +190,7 @@ const fortunes = {
     "오늘의 하이라이트는 큰 무대가 아니라 작은 친절일지도 몰라. 한 번 해보자.",
     "눈부신 사람도 가끔은 흐려도 돼. 흐린 날의 너도 여전히 주인공이야.",
     "자존심이 먼저 일어섰네. 일단 앉히고 마음을 불러와.",
-    "사진은 한 장이면 충분해. 나머지는 눈과 마음에 찍어 두자.",
-    "조명이 아직 따뜻하게 남았어. 오늘은 그 온기를 곁에 나누자.",
-    "네가 커튼을 열자 아침이 들어왔어. 오늘은 그 빛을 환영해.",
-    "박수 한 번이 복도 안을 울렸어. 오늘은 그 한 번을 소중히 해.",
-    "왕관의 빈 자리는 네 몫이야. 오늘은 조금만 더 머물러 있어.",
-    "거울에 비친 네가 먼저 웃었어. 그 웃음부터 따라가 보자.",
-    "무대 뒤 안내판에 정장 한 벌이 걸려 있어. 내일의 무대는 아직 멀어.",
-    "오늘 네 대본에 한 줄이 새로 생겼어. 그 줄만 소리 내어 읽어 보자.",
-    "조명이 너무 밝아도 눈은 피곤해지지. 오늘은 조금 낮은 조명에서 쉬자.",
-    "저녁 햇살이 무대 바닥을 길게 덮었어. 오늘의 마지막 장면은 그 빛이야.",
-    "네 이름이 적힌 자리가 아직 따뜻해. 오늘은 그 자리를 오래 머물러.",
-    "주인공이 넘어져도 대본은 계속이야. 오늘은 넘어진 채로도 진행해.",
-    "앵무새가 수고를 증명해 준대. 물 한 모금 마시고 다시 올라서자.",
-    "무대 뒤 조명이 하나씩 꺼졌어. 오늘은 그 순서대로 거둬 보자.",
-    "화분 속 다시지가 또 줄을 세웠어. 오늘은 그 위에 한 줄만 더 써.",
-    "장미 한 송이가 시선을 잡았어. 오늘은 그 곁에서 한 장만 찍자.",
-    "네 박수가 무대 뒤까지 닿았어. 오늘은 그 박수를 한 번 더 받아.",
-    "촬영이 끝나고 남은 조명이 있네. 오늘은 그 빛 아래서 쉬자.",
-    "걸음걸이에 발판이 가까워졌어. 오늘은 조금 더 크게 밟아 보자.",
-    "해가 무대 위를 천천히 지우는 중이야. 오늘은 그걸 보며 마저 서 있어.",
-    "조명이 다시 켜졌어. 오늘은 그 첫 박자만 세어 봐."
+    "사진은 한 장이면 충분해. 나머지는 눈과 마음에 찍어 두자."
   ],
   "처녀자리": [
     "정리된 서랍 속 어긋난 물건 하나가 오늘의 주인공이야. 그냥 두어도 서랍은 잘 닫혀.",
@@ -372,27 +212,7 @@ const fortunes = {
     "완벽을 기다리다 해가 지곤 해. 팔십 점짜리 오늘도 충분히 근사해.",
     "작은 것을 챙기는 네 습관이 누군가를 지켜 왔어. 그 사실을 오늘 인정해 줘.",
     "쉬는 시간도 일정표에 한 칸 적어. 빈칸이 아니라 약속으로.",
-    "고칠 곳이 보여도 노트를 덮어도 돼. 내일의 눈이 더 잘 볼 거야.",
-    "책꽂이 순서가 조금 어긋났네. 오늘은 제목 하나만 맞춰 보자.",
-    "메모의 글씨가 오늘은 반듯해. 그 반듯함만 한 줄 옮겨 적자.",
-    "줄자 한쪽이 바늘보다 반 뼘 길어. 오늘은 어느 쪽을 믿을지 골라.",
-    "오래된 도구가 손에 맞는 모양이야. 오늘은 그 손잡이를 한 번 더 쥐어 보자.",
-    "표가 하나씩 맞춰질 때 표정이 풀려. 오늘은 그 표 하나만 완성해.",
-    "화분 흙을 만지다 마른 줄기 하나를 발견했어. 오늘은 물을 조금만 더 줘.",
-    "오타 하나가 하루를 바꿀 때가 있어. 오늘은 오타를 한 번 더 읽어.",
-    "정렬된 목록 속 빈 줄 하나가 걸려. 오늘은 그 빈 줄을 채울지 지울지 정해.",
-    "정리함이 열릴 때마다 다르게 보인다. 오늘은 그 중 제일 편한 걸 써.",
-    "줄이 그어진 문장 옆에 점이 찍혔어. 오늘은 그 점을 따라 읽어.",
-    "새 연필은 아직 끝이 무뎌. 오늘은 그 무딘 끝으로 한 줄만 써.",
-    "세탁기 소리가 규칙적으로 울려. 오늘은 그 리듬에 맞춰 한 가지를 끝내.",
-    "설거지하며 하나씩 정리하다가 멈췄어. 오늘은 그 멈춤도 허용해.",
-    "표지 안쪽에 접힌 메모가 있었어. 오늘은 그 메모를 펴 보자.",
-    "정확한 문장보다 정확한 순서가 중요해. 오늘은 순서부터 맞춰 보자.",
-    "작은 흠집을 손톱으로 짚었다. 오늘은 그 흠집을 그대로 둬.",
-    "원본을 보존한 복사본을 하나 만들었어. 오늘은 그 복사본을 믿어.",
-    "모든 칸을 채우려다 멈추고 말았어. 오늘은 빈칸 하나로 충분해.",
-    "정리가 끝나면 오히려 허전함이 와. 오늘은 그 허전함도 편한 거야.",
-    "체크박스 하나를 비우고 나니 마음이 가벼워졌어. 오늘은 그 빈칸을 둬."
+    "고칠 곳이 보여도 노트를 덮어도 돼. 내일의 눈이 더 잘 볼 거야."
   ],
   "천칭자리": [
     "흔들리다 멈춘 저울은 균형이 아니라 선택을 부탁하고 있어. 둘 다 아니어도 돼, 하나만 골라봐.",
@@ -414,27 +234,7 @@ const fortunes = {
     "완벽하게 맞는 답이 없을 땐 몸이 덜 긴장되는 답을 골라. 어깨가 알려줄 거야.",
     "균형은 가만히 서 있는 게 아니라 계속 조금씩 기우는 거야. 오늘은 네 쪽으로 한 뼘 기울어봐.",
     "모두의 기분을 읽느라 애썼네. 이제 네 표정을 거울에 물어보자.",
-    "오늘은 쉬는 시간도 선택지에 넣어. 쉬는 걸 고르는 건 멋진 판단이야.",
-    "저울판 위 두 시계가 자꾸 다른 속도로 가. 오늘은 하나만 골라 보자.",
-    "문 앞에서 두 사람이 동시에 인사했어. 오늘은 먼저 웃는 쪽이 편해.",
-    "메뉴판에 없는 오늘의 요리가 있었어. 그걸 골라도 괜찮아.",
-    "신호등이 노란색으로 오래 머물렀어. 오늘은 그 기다림도 허락해.",
-    "의자 하나가 자꾸 자리를 바꿔. 오늘은 그 의자를 네 쪽으로 옮겨.",
-    "양쪽 손에 들린 선반이 비어 보이기 시작했어. 오늘은 하나를 내려놓고.",
-    "도넛처럼 동전 던지기를 시작했어. 오늘은 눈 감고 한 번만 던져.",
-    "창문 너머로 파티가 이어지고 있어. 오늘은 초대장을 한 장만 써.",
-    "계산대의 빨간 간판이 깜빡였어. 오늘은 그 빛 아래서 잠깐 쉬자.",
-    "네 앞에 놓인 빈 접시가 먼저 말했어. 오늘은 그 빈자리부터 채워.",
-    "거울 속 두 개의 내가 조금 다르게 보여. 오늘은 어느 쪽도 고르지 마.",
-    "음악이 한쪽으로만 흘렀어. 오늘은 그 소리부터 함께 들어.",
-    "표가 양쪽에 붙어 있었어. 오늘은 한쪽만 떼어 보자.",
-    "탁자 위 두 시계가 다른 시간을 가리켜. 오늘은 네 시계만 믿어.",
-    "선택지가 너무 많아서 아무것도 안 골랐어. 오늘은 임의로 하나만 집어.",
-    "한쪽을 고르면 다른 쪽이 아쉬워 보여. 오늘은 그 아쉬움도 감수해.",
-    "무게를 옮기다 균형이 조금 흔들렸어. 오늘은 다시 고르게 맞춰 보자.",
-    "저녁 식탁의 자리가 절반만 차 있었어. 오늘은 그 빈자리를 채우는 쪽이 돼.",
-    "마음이 가는 쪽으로 먼저 앉았어. 오늘은 그 자리를 그대로 둬.",
-    "저울 위 작은 추가 자꾸 흔들려. 오늘은 추 하나를 내려놓고 보자."
+    "오늘은 쉬는 시간도 선택지에 넣어. 쉬는 걸 고르는 건 멋진 판단이야."
   ],
   "전갈자리": [
     "깊은 물 밑의 오래된 병은 아직 봉인되어 있어. 오늘은 마개를 조금만 흔들어봐도 돼.",
@@ -456,27 +256,7 @@ const fortunes = {
     "가까운 사람에게서 멀어진 기분이 들 수 있어. 오늘은 짧은 인사로 거리를 좁혀봐.",
     "오래 품은 마음은 쉽게 놓이지 않아. 놓는 연습은 손가락 하나부터 해도 돼.",
     "달이 네 가장 조용한 방을 지나가. 그 방에 오늘만 따뜻한 조명을 켜 두자.",
-    "비밀스러운 미소 말고 따뜻한 인사도 가끔 꺼내봐. 의외로 잘 어울려.",
-    "잠긴 서랍의 열쇠가 드디어 맞았어. 오늘은 그 문을 조금만 열어.",
-    "달빛이 비밀번호처럼 창문에서 깜빡여. 오늘은 그 신호 하나만 믿어.",
-    "물속의 손이 뭔가 쥐고 있었어. 오늘은 그것이 무엇인지 물어 볼까.",
-    "비밀을 지키는 데는 힘이 들지. 오늘은 그 힘이 늘 네 편이야.",
-    "소리 없이 모래가 무너졌어. 오늘은 그 변화만 조용히 지켜봐.",
-    "상자 밑에 봉인된 편지가 있었어. 오늘은 주소만 한 번 확인해 보자.",
-    "긴 침묵 뒤의 대답은 늘 다르고 정확했어. 오늘은 기다리는 쪽이 이겨.",
-    "어둠 속 반사된 두 개의 눈이 스쳤어. 오늘은 시선을 거두지 않아도 돼.",
-    "잠금장치가 저절로 풀렸어. 오늘은 그 자유를 조금만 써 봐.",
-    "비밀을 안쪽으로 옮길 때마다 마음이 가벼워졌어. 오늘은 그 통로만 열어두자.",
-    "깊은 곳에서 올라온 한 줄기가 표면에 닿았어. 오늘은 그 한 줄기만 봐.",
-    "말하지 않은 게 제일 큰 목소리였어. 오늘은 그 걸음도 받아들여.",
-    "잠금쇠에 새 자국이 남아 있어. 오늘은 네 손이 아니라 다른 손이 만졌네.",
-    "묶어 둔 실이 조금 느슨해졌어. 오늘은 다시 조이는 대신 새 매듭을 해.",
-    "눈을 감으면 소리가 더 멀리 갔어. 오늘은 눈을 뜨고 첫 소리만 잡아.",
-    "비밀을 지키는 동안 네가 조금씩 지쳤어. 오늘은 한 사람에게만 나눠.",
-    "아무도 모르게 지켜 둔 시간이 있었어. 오늘은 그 시간의 값을 알아봐.",
-    "성냥불이 방 안을 짧게 밝혔어. 오늘은 그 짧은 시간만 믿어.",
-    "봉인된 어둠이 조금씩 물러났어. 오늘은 그 가장자리만 살짝 열어.",
-    "잠금장치 안쪽에 작은 빛이 남았어. 오늘은 그 빛만 눈으로 확인하자."
+    "비밀스러운 미소 말고 따뜻한 인사도 가끔 꺼내봐. 의외로 잘 어울려."
   ],
   "사수자리": [
     "반쯤 싼 여행 가방은 마음이 이미 떠났다는 증거야. 지갑과 충전기만 챙기고 가자!",
@@ -489,7 +269,7 @@ const fortunes = {
     "하늘이 넓게 열렸어. 우산은 날씨 앱에 묻고, 마음은 하늘에 맡기자.",
     "새로운 것이 자꾸 눈에 걸려. 한 번도 안 가 본 골목에 들어가 봐.",
     "목적지가 없어도 출발은 할 수 있어. 신발 끈부터 단단히 묶자.",
-    "지금 필요한 건 확신이 아니라 작은 호기심이야. 궁금한 걸 하나만 검색해 보자.",
+    "지금 필요한 건 확신이 아니라 작은 호기심이야. 궁금한 걸 하나만 검색해봐.",
     "계획이 바뀌면 여행이 시작돼. 당황은 3초만 하고 풍경을 보자.",
     "멀리 가고 싶은 마음은 동네 한 바퀴로도 풀려. 낯선 길로 집에 가 볼래?",
     "네 낙천성은 같이 있는 사람을 가볍게 해. 오늘은 그 가벼움을 한 사람에게 나눠줘.",
@@ -498,27 +278,7 @@ const fortunes = {
     "자유는 돌아올 곳이 있어서 더 신나. 저녁 약속 시간은 주머니에 넣어 두자.",
     "도전의 결과가 어떻든 오늘의 경험치는 쌓여. 일단 웃으면서 해 보자.",
     "낯선 사람과 나눈 짧은 대화가 길을 바꿔. 먼저 이름을 물어보는 건 어때?",
-    "세상은 넓고 간식은 챙겨야 해. 가방 한쪽에 작은 즐거움을 하나 넣어 가자.",
-    "모험이 늘 필요는 없어. 늘 보던 골목의 끝에 있는 것만 하나 확인해 보자.",
-    "지도에 없는 길도 결국 발밑에 생겨. 오늘은 발걸음 하나만 옮겨 보자.",
-    "낯선 음식 앞에서 망설이면 작은 쪽을 먼저 골라. 취향은 천천히 넓어져.",
-    "여행을 가방 말고 마음에 싸도 돼. 떠날 곳은 늘 가까이 있었네.",
-    "바람이 불면 방향도 흔들려. 잠깐 멈춰서 세운 표지판을 다시 봐.",
-    "떠나고 싶은 마음과 남아 있고 싶은 마음은 함께 있어. 둘 다 안 미루고 한 걸음만 옮겨 보자.",
-    "오늘 하루는 충분히 멀리 갔어. 돌아오는 길에 새로 생긴 것 하나만 담자.",
-    "호기심이 두 발로 오네. 먼저 걸어본 쪽이 나중에 더 기억해.",
-    "길이 어긋나도 표지판은 아직 멀쩡해. 한 번 더 고개를 들어보자.",
-    "새로운 색을 하나 골라 보자. 오늘의 풍경이 조금 달라질 거야.",
-    "무리해서 앞장서지 않아도 돼. 네 속도대로 가도 길은 같은 곳에서 끝나.",
-    "소문 하나가 발걸음을 가볍게 만들어. 한 번 확인만 하고 넘어가자.",
-    "먼 데 있는 게 더 커 보이는 법이 있어. 가까이 한 걸음만 다가가.",
-    "오늘은 길보다 걸음만 세어. 숫자는 가볍게 읽혀.",
-    "낯선 풍경도 몇 번 보면 익숙해져. 두 번째 방문을 예약해 두자.",
-    "고민보다 궁금함이 먼저야. 답을 구하기 전에 질문을 하나만 적어.",
-    "흐린 날에도 길은 있어. 오늘은 발밑의 자갈 하나만 확인해 보자.",
-    "멀리 가기 전에 오늘의 자리부터 정리해. 앉을 곳 하나가 생기면 좋아.",
-    "다만 기다린 만큼 보람이 있을 거야. 오늘은 첫 발만 뗄지 생각해 보자.",
-    "길목 끝에 새 표지판이 섰어. 오늘은 그 방향을 한 번만 읽어 보자."
+    "세상은 넓고 간식은 챙겨야 해. 가방 한쪽에 작은 즐거움을 하나 넣어 가자."
   ]
 };
 
@@ -580,21 +340,6 @@ const zodiacSymbols = {
   천칭자리: "♎",
   전갈자리: "♏",
   사수자리: "♐",
-};
-
-const zodiacShareColors = {
-  염소자리: "#B9D1FF",
-  물병자리: "#91D5FF",
-  물고기자리: "#C2B3FF",
-  양자리: "#FF9D91",
-  황소자리: "#A7E2C0",
-  쌍둥이자리: "#FFE18A",
-  게자리: "#A9DDF4",
-  사자자리: "#FFC27F",
-  처녀자리: "#C8E69B",
-  천칭자리: "#F1B5D1",
-  전갈자리: "#E3A7E8",
-  사수자리: "#C8AEFF",
 };
 
 const zodiacElements = {
@@ -761,35 +506,11 @@ function appendTextElement(parent, tagName, className, text) {
 const shareActions = document.getElementById("share-actions");
 const saveImageButton = document.getElementById("save-image-button");
 const shareImageButton = document.getElementById("share-image-button");
-const shareCardPreview = document.getElementById("share-card-preview");
-const shareCardPreviewImage = document.getElementById("share-card-preview-image");
-const shareCardTemplate = document.getElementById("share-card-template");
-const shareCardSignSymbol = document.getElementById("share-card-sign-symbol");
-const shareCardSign = document.getElementById("share-card-sign");
-const shareCardDate = document.getElementById("share-card-date");
-const shareCardQuote = document.getElementById("share-card-quote");
-let shareCardBlob = null;
-let shareCardRenderPromise = null;
-let shareCardImageUrl = null;
-let shareCardRenderId = 0;
 
 function updateShareActions(show) {
   if (shareActions) {
     shareActions.hidden = !show;
   }
-  [saveImageButton, shareImageButton].forEach((button) => {
-    if (button) button.disabled = show && !shareCardBlob;
-  });
-}
-
-function resetShareCardPreview() {
-  shareCardBlob = null;
-  shareCardRenderPromise = null;
-  shareCardRenderId += 1;
-  if (shareCardImageUrl) URL.revokeObjectURL(shareCardImageUrl);
-  shareCardImageUrl = null;
-  if (shareCardPreviewImage) shareCardPreviewImage.removeAttribute("src");
-  if (shareCardPreview) shareCardPreview.hidden = true;
 }
 
 function showInputScreen() {
@@ -815,7 +536,6 @@ function renderEmptyLetter() {
     "생년월일을 알려주면 별들이 당신을 위한 이야기를 골라줄게요.",
   );
   result.replaceChildren(emptyLetter);
-  resetShareCardPreview();
   updateShareActions(false);
 }
 
@@ -881,9 +601,7 @@ function renderFortune(sign, today) {
   appendTextElement(thought, "p", "thought-label", "A thought to keep");
   appendTextElement(thought, "p", "thought-text", fortunes[sign][fortuneIndex]);
   result.append(thought);
-  resetShareCardPreview();
   updateShareActions(true);
-  void prepareLetterImagePreview(shareCardRenderId, sign, today);
 }
 
 function setFormMessage(message) {
@@ -1060,220 +778,864 @@ if (clearBirthdateButton) {
 }
 
 
-async function createLetterImage(sign, today) {
-  if (shareCardBlob) return shareCardBlob;
-  if (shareCardRenderPromise) return shareCardRenderPromise;
+// ===== 공유카드 렌더러 (share-card/share-card.js와 같은 코드) =====
+/*
+ * Silver Lining Letter - 공유카드 렌더러 (1080 x 1350)
+ *
+ * 사용법
+ *   const canvas = renderShareCard({
+ *     sign: "물고기자리",          // 별자리 이름
+ *     date: new Date(),            // 카드에 찍을 날짜
+ *     sentence: "첫 문장",         // 카드 가운데 크게 들어갈 문장
+ *     signoff: "With starlight,\nThe Universe",
+ *     phaseKey: "waxing-crescent", // 달 위상 키 (app.js의 lunarPhaseNames 키)
+ *     phaseLabel: "초승달",
+ *     fontBody: '"Noto Sans KR", sans-serif',
+ *     fontDisplay: '"Cormorant Garamond", serif',
+ *   });
+ *
+ * 디자인 규칙
+ *   - 별자리 원소마다 팔레트와 중심 모티프가 다르다.
+ *       불: 줄무늬에 잘려 가라앉는 해 / 흙: 한쪽으로 모이는 궤도선과 행성
+ *       공기: 옆으로 회전하는 동전 모양 원 / 물: 월식 고리와 번져 가는 물결
+ *   - 별자리 번호와 날짜로 배치를 조금씩 바꿔서 매일 다른 카드가 나온다.
+ *   - Safari 호환: ctx.filter, ctx.letterSpacing, 원뿔 그라데이션을 쓰지 않는다.
+ */
+(function (global) {
+  "use strict";
 
-  const renderId = shareCardRenderId;
-  const renderPromise = renderLetterImage(sign, today);
-  shareCardRenderPromise = renderPromise;
-  try {
-    const blob = await renderPromise;
-    if (renderId === shareCardRenderId) shareCardBlob = blob;
-    return blob;
-  } finally {
-    if (shareCardRenderPromise === renderPromise) shareCardRenderPromise = null;
+  const W = 1080;
+  const H = 1350;
+  const M = 90; // 좌우 여백
+
+  const SIGN_INFO = {
+    양자리: { en: "ARIES", el: "fire", n: 0 },
+    황소자리: { en: "TAURUS", el: "earth", n: 1 },
+    쌍둥이자리: { en: "GEMINI", el: "air", n: 2 },
+    게자리: { en: "CANCER", el: "water", n: 3 },
+    사자자리: { en: "LEO", el: "fire", n: 4 },
+    처녀자리: { en: "VIRGO", el: "earth", n: 5 },
+    천칭자리: { en: "LIBRA", el: "air", n: 6 },
+    전갈자리: { en: "SCORPIO", el: "water", n: 7 },
+    사수자리: { en: "SAGITTARIUS", el: "fire", n: 8 },
+    염소자리: { en: "CAPRICORN", el: "earth", n: 9 },
+    물병자리: { en: "AQUARIUS", el: "air", n: 10 },
+    물고기자리: { en: "PISCES", el: "water", n: 11 },
+  };
+
+  // stops: 어두운 색 -> 밝은 색 순서
+  const PALETTES = {
+    fire: {
+      bg: ["#0c0612", "#150a1c"],
+      stops: ["#2b1457", "#ff4a55", "#ff9a3d", "#ff8fc0", "#fff1dc"],
+      glow: "#ff6a3d",
+      line: "#ffe9d2",
+      accent: "#ffb27a",
+    },
+    earth: {
+      bg: ["#050f10", "#0a1614"],
+      stops: ["#0f3b46", "#2fa58a", "#e8c46a", "#f4a06b", "#f6ecd2"],
+      glow: "#e8b55a",
+      line: "#f3ead0",
+      accent: "#e8c46a",
+      bgGlow: 0.13,
+    },
+    air: {
+      bg: ["#070a1b", "#0d0f24"],
+      stops: ["#251b86", "#3b6bff", "#a67bff", "#ff9ccb", "#ffe6d2"],
+      glow: "#8f7bff",
+      line: "#eae8ff",
+      accent: "#b8b0ff",
+    },
+    water: {
+      bg: ["#060616", "#0a0820"],
+      stops: ["#2b0f6b", "#3a7bff", "#20d3c2", "#ff5fa8", "#ffe3f1"],
+      glow: "#ff5fa8",
+      line: "#ffe9f4",
+      accent: "#ff8fc0",
+    },
+  };
+
+  const MONTHS = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+
+  /* ---------- 작은 도구들 ---------- */
+
+  function hex(c, a) {
+    const n = parseInt(c.slice(1), 16);
+    return "rgba(" + ((n >> 16) & 255) + "," + ((n >> 8) & 255) + "," + (n & 255) + "," + a + ")";
   }
-}
 
-async function prepareLetterImagePreview(renderId, sign, today) {
-  try {
-    const blob = await createLetterImage(sign, today);
-    if (!blob || renderId !== shareCardRenderId || !shareCardPreview || !shareCardPreviewImage) {
-      return;
+  function rngFrom(seedStr) {
+    let h = 2166136261;
+    for (let i = 0; i < seedStr.length; i++) {
+      h ^= seedStr.charCodeAt(i);
+      h = Math.imul(h, 16777619);
     }
-
-    shareCardImageUrl = URL.createObjectURL(blob);
-    shareCardPreviewImage.src = shareCardImageUrl;
-    await shareCardPreviewImage.decode();
-    if (renderId !== shareCardRenderId) return;
-    shareCardPreview.hidden = false;
-    updateShareActions(true);
-  } catch (error) {
-    console.error("공유카드 미리보기를 만들지 못했습니다.", error);
-    setFormMessage("공유카드 미리보기를 만들지 못했어요. 이미지 저장을 다시 시도해 주세요.");
+    let a = h >>> 0;
+    return function () {
+      a |= 0;
+      a = (a + 0x6d2b79f5) | 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
   }
-}
 
-function wrapCanvasText(context, text, maxWidth) {
-  const lines = [];
-  let line = "";
+  function newCanvas(w, h) {
+    const c = document.createElement("canvas");
+    c.width = w;
+    c.height = h;
+    return c;
+  }
 
-  text.split(/\s+/).filter(Boolean).forEach((word) => {
-    const candidate = line ? `${line} ${word}` : word;
-    if (context.measureText(candidate).width <= maxWidth) {
-      line = candidate;
-      return;
-    }
-
-    if (line) lines.push(line);
-    line = "";
-    Array.from(word).forEach((character) => {
-      const next = line + character;
-      if (line && context.measureText(next).width > maxWidth) {
-        lines.push(line);
-        line = character;
-      } else {
-        line = next;
-      }
+  function addStops(g, stops) {
+    stops.forEach(function (c, i) {
+      g.addColorStop(i / (stops.length - 1), c);
     });
-  });
+  }
 
-  if (line) lines.push(line);
-  return lines;
+  function glowAt(ctx, x, y, r, color, a) {
+    ctx.save();
+    ctx.globalCompositeOperation = "lighter";
+    const g = ctx.createRadialGradient(x, y, 0, x, y, r);
+    g.addColorStop(0, hex(color, a));
+    g.addColorStop(1, hex(color, 0));
+    ctx.fillStyle = g;
+    ctx.fillRect(x - r, y - r, r * 2, r * 2);
+    ctx.restore();
+  }
+
+  function fadeLine(ctx, x0, y, x1, color, a, lw) {
+    const g = ctx.createLinearGradient(x0, 0, x1, 0);
+    g.addColorStop(0, hex(color, 0));
+    g.addColorStop(0.18, hex(color, a));
+    g.addColorStop(0.82, hex(color, a));
+    g.addColorStop(1, hex(color, 0));
+    ctx.strokeStyle = g;
+    ctx.lineWidth = lw;
+    ctx.beginPath();
+    ctx.moveTo(x0, y);
+    ctx.lineTo(x1, y);
+    ctx.stroke();
+  }
+
+  // 세로 그라데이션 원(타원). 위쪽 왼쪽에 부드러운 하이라이트
+  function discFill(ctx, cx, cy, rx, ry, stops) {
+    ctx.save();
+    ctx.translate(cx, cy);
+    const g = ctx.createLinearGradient(0, -ry, 0, ry);
+    addStops(g, stops);
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.ellipse(0, 0, rx, ry, 0, 0, Math.PI * 2);
+    ctx.fill();
+    const m = Math.max(rx, ry);
+    const hl = ctx.createRadialGradient(-rx * 0.3, -ry * 0.38, 0, -rx * 0.3, -ry * 0.38, m * 0.95);
+    hl.addColorStop(0, "rgba(255,246,235,0.34)");
+    hl.addColorStop(1, "rgba(255,246,235,0)");
+    ctx.fillStyle = hl;
+    ctx.beginPath();
+    ctx.ellipse(0, 0, rx, ry, 0, 0, Math.PI * 2);
+    ctx.fill();
+    // 가장자리 비네트 (타원 모양을 따라가도록 스케일)
+    ctx.save();
+    ctx.scale(rx / m, ry / m);
+    const vg = ctx.createRadialGradient(0, 0, m * 0.55, 0, 0, m);
+    vg.addColorStop(0, "rgba(8,5,24,0)");
+    vg.addColorStop(1, "rgba(8,5,24,0.34)");
+    ctx.fillStyle = vg;
+    ctx.beginPath();
+    ctx.arc(0, 0, m, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+    ctx.restore();
+  }
+
+  // 색수차처럼 청록/주황으로 살짝 어긋난 얇은 테두리
+  function chromaRim(ctx, cx, cy, rx, ry, pal, lw, strength) {
+    const k = strength == null ? 1 : strength;
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.globalCompositeOperation = "lighter";
+    const layers = [
+      [-2.6, "#3fd0ff", 0.32 * k],
+      [2.6, "#ff6a3d", 0.32 * k],
+      [0, pal.line, 0.8 * k],
+    ];
+    layers.forEach(function (l) {
+      ctx.strokeStyle = hex(l[1], l[2]);
+      ctx.lineWidth = lw;
+      ctx.beginPath();
+      ctx.ellipse(l[0], 0, rx, ry, 0, 0, Math.PI * 2);
+      ctx.stroke();
+    });
+    ctx.restore();
+  }
+
+  function dot(ctx, x, y, r, color, a, glow) {
+    ctx.save();
+    if (glow) {
+      ctx.shadowColor = hex(color, 0.9);
+      ctx.shadowBlur = glow;
+    }
+    ctx.fillStyle = hex(color, a);
+    ctx.beginPath();
+    ctx.arc(x, y, r, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+  }
+
+  // 네 갈래 별 반짝임
+  function sparkle(ctx, x, y, s, color, a) {
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.shadowColor = hex(color, 0.9);
+    ctx.shadowBlur = s * 1.4;
+    ctx.fillStyle = hex(color, a);
+    ctx.beginPath();
+    ctx.moveTo(0, -s);
+    ctx.quadraticCurveTo(0, 0, s, 0);
+    ctx.quadraticCurveTo(0, 0, 0, s);
+    ctx.quadraticCurveTo(0, 0, -s, 0);
+    ctx.quadraticCurveTo(0, 0, 0, -s);
+    ctx.fill();
+    ctx.shadowBlur = 0;
+    ctx.strokeStyle = hex(color, a * 0.55);
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(-s * 2.2, 0);
+    ctx.lineTo(s * 2.2, 0);
+    ctx.moveTo(0, -s * 2.2);
+    ctx.lineTo(0, s * 2.2);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  function trackedText(ctx, text, x, y, spacing, align) {
+    const chars = Array.from(text);
+    const widths = chars.map(function (c) {
+      return ctx.measureText(c).width;
+    });
+    const total = widths.reduce(function (a, b) {
+      return a + b;
+    }, 0) + spacing * (chars.length - 1);
+    let cx = align === "right" ? x - total : align === "center" ? x - total / 2 : x;
+    ctx.textAlign = "left";
+    chars.forEach(function (c, i) {
+      ctx.fillText(c, cx, y);
+      cx += widths[i] + spacing;
+    });
+    return total;
+  }
+
+  function wrapText(ctx, text, maxW) {
+    const words = text.trim().split(/\s+/);
+    const lines = [];
+    let line = "";
+    words.forEach(function (w) {
+      const cand = line ? line + " " + w : w;
+      if (ctx.measureText(cand).width <= maxW) {
+        line = cand;
+        return;
+      }
+      if (line) lines.push(line);
+      let seg = "";
+      Array.from(w).forEach(function (ch) {
+        if (seg && ctx.measureText(seg + ch).width > maxW) {
+          lines.push(seg);
+          seg = ch;
+        } else {
+          seg += ch;
+        }
+      });
+      line = seg;
+    });
+    if (line) lines.push(line);
+    return lines;
+  }
+
+  /* ---------- 배경, 그레인 ---------- */
+
+  function paintBackground(ctx, pal, rnd) {
+    const g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, pal.bg[0]);
+    g.addColorStop(1, pal.bg[1]);
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+    for (let i = 0; i < 3; i++) {
+      const x = rnd() * W;
+      const y = H * (0.08 + rnd() * 0.42);
+      const r = 380 + rnd() * 320;
+      glowAt(ctx, x, y, r, pal.stops[1 + (i % 3)], pal.bgGlow || 0.2);
+    }
+  }
+
+  // 필름 그레인: 중간 밝기에서 더 거칠게, 채널마다 조금씩 다르게
+  function addGrain(ctx, amount, seed) {
+    const img = ctx.getImageData(0, 0, W, H);
+    const d = img.data;
+    let s = (seed | 0) || 123456789;
+    function next() {
+      s ^= s << 13;
+      s ^= s >>> 17;
+      s ^= s << 5;
+      return (s >>> 0) / 4294967296 - 0.5;
+    }
+    for (let i = 0; i < d.length; i += 4) {
+      const lum = (d[i] * 0.3 + d[i + 1] * 0.59 + d[i + 2] * 0.11) / 255;
+      const k = amount * (0.3 + 0.7 * Math.sin(Math.min(1, lum * 1.25) * Math.PI));
+      const base = next();
+      d[i] += (base * 0.75 + next() * 0.25) * k;
+      d[i + 1] += (base * 0.75 + next() * 0.25) * k;
+      d[i + 2] += (base * 0.75 + next() * 0.25) * k;
+    }
+    ctx.putImageData(img, 0, 0);
+  }
+
+  /* ---------- 원소별 중심 모티프 ---------- */
+
+  // 불: 줄무늬로 잘려 가라앉는 해
+  function artFire(ctx, pal, rnd, n) {
+    const cx = 540 + (rnd() - 0.5) * 110;
+    const cy = 450;
+    const R = 232 + (n % 3) * 14;
+    glowAt(ctx, cx, cy, R * 2.4, pal.glow, 0.34);
+
+    // 바깥 고리들
+    for (let k = 1; k <= 4; k++) {
+      ctx.strokeStyle = hex(pal.line, 0.2 - k * 0.035);
+      ctx.lineWidth = 1.2;
+      ctx.beginPath();
+      ctx.arc(cx, cy, R + 38 * k, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+    // 점선 고리
+    const dots = 64;
+    for (let i = 0; i < dots; i++) {
+      const a = (i / dots) * Math.PI * 2;
+      dot(ctx, cx + Math.cos(a) * (R + 205), cy + Math.sin(a) * (R + 205), 1.7, pal.line, 0.5, 0);
+    }
+
+    // 해: 아래쪽이 점점 가늘어지는 줄무늬로 잘린다
+    const L = newCanvas(W, H);
+    const lc = L.getContext("2d");
+    discFill(lc, cx, cy, R, R, pal.stops.slice().reverse());
+    lc.globalCompositeOperation = "destination-out";
+    let y = cy + R * 0.1;
+    let keep = 28;
+    let cut = 2.5;
+    while (y < cy + R + 6) {
+      y += keep;
+      lc.fillRect(0, y, W, cut);
+      y += cut;
+      keep = Math.max(3, keep * 0.8);
+      cut = cut * 1.2 + 0.5;
+    }
+    ctx.save();
+    ctx.shadowColor = hex(pal.glow, 0.55);
+    ctx.shadowBlur = 56;
+    ctx.drawImage(L, 0, 0);
+    ctx.restore();
+    chromaRim(ctx, cx, cy, R, R, pal, 1.6, 0.8);
+
+    // 아래로 번지는 가로선과 점 기둥
+    let ly = cy + R + 34;
+    let step = 15;
+    for (let i = 0; i < 9; i++) {
+      fadeLine(ctx, M - 20, ly, W - M + 20, pal.line, 0.55 - i * 0.05, 1.5 - i * 0.1);
+      ly += step;
+      step *= 0.97;
+    }
+    for (let i = 0; i < 9; i++) {
+      dot(ctx, cx, cy + R + 44 + i * 21, 8 - i * 0.7, pal.stops[2], 0.95, 14);
+    }
+    // 궤도 위의 작은 점
+    for (let i = 0; i < 3; i++) {
+      const a = rnd() * Math.PI * 2;
+      const rr = R + 38 * (1 + (i % 4));
+      dot(ctx, cx + Math.cos(a) * rr, cy + Math.sin(a) * rr, 6 + i * 2, pal.stops[3], 0.95, 16);
+    }
+  }
+
+  // 흙: 한쪽으로 모이는 궤도선과 행성
+  function artEarth(ctx, pal, rnd, n) {
+    const cx = 540;
+    const cy = 450;
+    const rot = -0.4 + (n % 4) * 0.2 + (rnd() - 0.5) * 0.12;
+    const dir = n % 2 ? 1 : -1;
+    glowAt(ctx, cx + dir * 70, cy, 560, pal.stops[1], 0.16);
+
+    const r0 = 118;
+    const count = 46;
+    ctx.save();
+    ctx.translate(cx, cy);
+    ctx.rotate(rot);
+    for (let i = 0; i < count; i++) {
+      const t = i / (count - 1);
+      const rx = r0 + t * 440;
+      const ry = r0 * 0.5 + t * 205;
+      const dx = -dir * (rx - r0) * 0.93;
+      ctx.strokeStyle = hex(pal.line, 0.8 - t * 0.66);
+      ctx.lineWidth = 1.3;
+      ctx.beginPath();
+      ctx.ellipse(dx, 0, rx, ry, 0, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+    ctx.restore();
+
+    function toWorld(lx, ly) {
+      return [cx + lx * Math.cos(rot) - ly * Math.sin(rot), cy + lx * Math.sin(rot) + ly * Math.cos(rot)];
+    }
+    // 궤도 위의 작은 별들
+    [8, 17, 27, 37].forEach(function (idx, j) {
+      const t = idx / (count - 1);
+      const rx = r0 + t * 440;
+      const ry = r0 * 0.5 + t * 205;
+      const dx = -dir * (rx - r0) * 0.93;
+      const a = rnd() * Math.PI * 2;
+      const p = toWorld(dx + Math.cos(a) * rx, Math.sin(a) * ry);
+      dot(ctx, p[0], p[1], 7 + (j % 3) * 4, j % 2 ? pal.stops[3] : pal.stops[2], 0.95, 18);
+    });
+
+    // 행성
+    const pp = toWorld(dir * 56, 0);
+    glowAt(ctx, pp[0], pp[1], 230, pal.glow, 0.4);
+    ctx.save();
+    ctx.shadowColor = hex(pal.glow, 0.6);
+    ctx.shadowBlur = 50;
+    discFill(ctx, pp[0], pp[1], 92, 92, pal.stops.slice().reverse());
+    ctx.restore();
+    chromaRim(ctx, pp[0], pp[1], 92, 92, pal, 1.4, 0.9);
+  }
+
+  // 공기: 옆으로 회전하는 동전 모양의 원 세 줄
+  function artAir(ctx, pal, rnd, n) {
+    ctx.save();
+    ctx.beginPath();
+    ctx.rect(0, 180, W, 640);
+    ctx.clip();
+    ctx.strokeStyle = hex(pal.line, 0.07);
+    ctx.lineWidth = 1;
+    for (let x = -700; x < W + 100; x += 15) {
+      ctx.beginPath();
+      ctx.moveTo(x, 180);
+      ctx.lineTo(x + 560, 820);
+      ctx.stroke();
+    }
+    ctx.restore();
+
+    const S = [1, 0.94, 1, 0.78, 0.5, 0.24];
+    const ry = 82;
+    const x0 = M + ry;
+    const gap = (W - M - ry - x0) / 5;
+    const variants = [
+      [0, 2, 3, 4],
+      [0, 1, 2, 3],
+      [1, 2, 3, 4],
+      [0, 1, 3, 4],
+      [0, 2, 3],
+      [1, 3, 4],
+    ];
+    for (let r = 0; r < 3; r++) {
+      const y = 292 + r * 180;
+      const mirror = (r + n) % 2 === 1;
+      glowAt(ctx, 540, y, 520, pal.stops[(r % 3) + 1], 0.1);
+      fadeLine(ctx, M - 30, y, W - M + 30, pal.line, 0.22, 1);
+      for (let i = 0; i < 6; i++) {
+        const s = S[mirror ? 5 - i : i];
+        const x = x0 + i * gap;
+        const stops = variants[(i + r * 2 + n) % variants.length].map(function (k) {
+          return pal.stops[k];
+        });
+        ctx.save();
+        ctx.shadowColor = hex(pal.glow, 0.32);
+        ctx.shadowBlur = 36;
+        discFill(ctx, x, y, ry * s, ry, stops);
+        ctx.restore();
+        chromaRim(ctx, x, y, ry * s, ry, pal, 1.3, 0.9);
+      }
+    }
+    // 위쪽 큰 윤곽 원
+    ctx.strokeStyle = hex(pal.line, 0.16);
+    ctx.lineWidth = 1.2;
+    ctx.beginPath();
+    ctx.arc(540 + (rnd() - 0.5) * 80, 470, 330, 0, Math.PI * 2);
+    ctx.stroke();
+  }
+
+  // 물: 월식 고리와 번져 가는 물결
+  function artWater(ctx, pal, rnd, n) {
+    const cx = 540 + (rnd() - 0.5) * 70;
+    const cy = 450;
+    const R = 232;
+
+    // 점 비
+    for (let i = 0; i < 110; i++) {
+      const x = rnd() * W;
+      const y = 190 + rnd() * 600;
+      const fade = 1 - (y - 190) / 640;
+      dot(ctx, x, y, 1.2 + rnd() * 3.6, pal.stops[1 + Math.floor(rnd() * 3)], 0.12 + 0.6 * fade * rnd(), 0);
+    }
+
+    // 퍼져 나가는 물결
+    for (let k = 0; k < 15; k++) {
+      const rr = R + 42 + k * 22 + k * k * 1.6;
+      ctx.strokeStyle = hex(pal.line, 0.34 * Math.pow(1 - k / 15, 1.6));
+      ctx.lineWidth = 1.1;
+      ctx.beginPath();
+      ctx.arc(cx, cy, rr, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+
+    // 안쪽 어두운 달
+    const inner = ctx.createRadialGradient(cx, cy, 0, cx, cy, R);
+    inner.addColorStop(0, "rgba(6,5,20,0.98)");
+    inner.addColorStop(1, "rgba(14,8,40,0.92)");
+    ctx.fillStyle = inner;
+    ctx.beginPath();
+    ctx.arc(cx, cy, R - 6, 0, Math.PI * 2);
+    ctx.fill();
+    for (let k = 1; k <= 5; k++) {
+      ctx.strokeStyle = hex(pal.line, 0.05);
+      ctx.beginPath();
+      ctx.arc(cx, cy, R - 6 - k * 34, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+
+    // 고리: 한쪽이 두껍고 반대쪽은 가는 월식
+    const a = -0.75 + (n % 4) * 0.42;
+    const c = 24;
+    const sft = 22;
+    glowAt(ctx, cx - Math.cos(a) * 160, cy - Math.sin(a) * 160, 330, pal.glow, 0.42);
+    const L = newCanvas(W, H);
+    const lc = L.getContext("2d");
+    const g = lc.createLinearGradient(cx - Math.cos(a) * R, cy - Math.sin(a) * R, cx + Math.cos(a) * R, cy + Math.sin(a) * R);
+    g.addColorStop(0, pal.stops[2]);
+    g.addColorStop(0.3, pal.stops[3]);
+    g.addColorStop(0.65, pal.stops[1]);
+    g.addColorStop(1, pal.stops[0]);
+    lc.fillStyle = g;
+    lc.beginPath();
+    lc.arc(cx, cy, R, 0, Math.PI * 2);
+    lc.fill();
+    lc.globalCompositeOperation = "destination-out";
+    lc.beginPath();
+    lc.arc(cx + Math.cos(a) * sft, cy + Math.sin(a) * sft, R - c, 0, Math.PI * 2);
+    lc.fill();
+    ctx.save();
+    ctx.shadowColor = hex(pal.glow, 0.7);
+    ctx.shadowBlur = 46;
+    ctx.drawImage(L, 0, 0);
+    ctx.restore();
+
+    // 두꺼운 쪽 끝의 빛 번짐
+    const hx = cx - Math.cos(a) * (R - 18);
+    const hy = cy - Math.sin(a) * (R - 18);
+    glowAt(ctx, hx, hy, 120, "#ffffff", 0.35);
+    sparkle(ctx, hx, hy, 18, "#fff4e8", 0.95);
+
+    // 가로지르는 빛줄기
+    ctx.save();
+    ctx.globalCompositeOperation = "lighter";
+    const fl = ctx.createLinearGradient(40, 0, W - 40, 0);
+    fl.addColorStop(0, hex(pal.stops[3], 0));
+    fl.addColorStop(0.5, hex(pal.stops[3], 0.55));
+    fl.addColorStop(1, hex(pal.stops[1], 0));
+    ctx.strokeStyle = fl;
+    ctx.lineWidth = 1.2;
+    ctx.beginPath();
+    ctx.moveTo(40, cy + 150);
+    ctx.lineTo(W - 40, cy - 190);
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  const ART = { fire: artFire, earth: artEarth, air: artAir, water: artWater };
+
+  /* ---------- 달 위상 (아래쪽 작은 줄) ---------- */
+
+  const PHASE_KEYS = [
+    "new",
+    "waxing-crescent",
+    "first-quarter",
+    "waxing-gibbous",
+    "full",
+    "waning-gibbous",
+    "last-quarter",
+    "waning-crescent",
+  ];
+
+  function litPath(ctx, k, r) {
+    // k: 0..7, 0은 삭, 4는 보름
+    if (k === 0) return false;
+    ctx.beginPath();
+    if (k === 4) {
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      return true;
+    }
+    const waxing = k < 4;
+    const kk = waxing ? k : 8 - k; // 1..3
+    const theta = (kk * Math.PI) / 4;
+    const rt = Math.abs(Math.cos(theta)) * r;
+    ctx.save();
+    if (!waxing) ctx.scale(-1, 1);
+    ctx.arc(0, 0, r, -Math.PI / 2, Math.PI / 2, false);
+    if (Math.cos(theta) > 0.001) {
+      ctx.ellipse(0, 0, rt, r, 0, Math.PI / 2, -Math.PI / 2, true);
+    } else if (Math.cos(theta) < -0.001) {
+      ctx.ellipse(0, 0, rt, r, 0, Math.PI / 2, Math.PI * 1.5, false);
+    } else {
+      ctx.lineTo(0, -r);
+    }
+    ctx.closePath();
+    ctx.restore();
+    return true;
+  }
+
+  function drawPhaseRow(ctx, pal, activeKey, rightX, y) {
+    const gap = 34;
+    const r = 9.5;
+    const active = Math.max(0, PHASE_KEYS.indexOf(activeKey));
+    for (let k = 0; k < 8; k++) {
+      const x = rightX - (7 - k) * gap;
+      ctx.save();
+      ctx.translate(x, y);
+      const on = k === active;
+      ctx.strokeStyle = hex(pal.line, on ? 0.95 : 0.3);
+      ctx.lineWidth = on ? 1.6 : 1;
+      ctx.beginPath();
+      ctx.arc(0, 0, r, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.fillStyle = hex(pal.line, on ? 0.95 : 0.34);
+      if (on) {
+        ctx.shadowColor = hex(pal.glow, 0.9);
+        ctx.shadowBlur = 14;
+      }
+      if (litPath(ctx, k, r - 1.8)) ctx.fill();
+      ctx.restore();
+      if (on) {
+        ctx.strokeStyle = hex(pal.accent, 0.55);
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.arc(x, y, r + 6, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+    }
+  }
+
+  /* ---------- 메인 ---------- */
+
+  function renderShareCard(o) {
+    const info = SIGN_INFO[o.sign] || SIGN_INFO["물고기자리"];
+    const pal = PALETTES[info.el];
+    const date = o.date instanceof Date ? o.date : new Date();
+    const fontBody = o.fontBody || '"Noto Sans KR", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    const fontDisplay = o.fontDisplay || '"Cormorant Garamond", Georgia, "Times New Roman", serif';
+    const iso = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+    const rnd = rngFrom(o.sign + "|" + iso);
+
+    const canvas = newCanvas(W, H);
+    const ctx = canvas.getContext("2d");
+
+    paintBackground(ctx, pal, rnd);
+    ART[info.el](ctx, pal, rnd, info.n);
+
+    // 반짝이는 별가루
+    for (let i = 0; i < 46; i++) {
+      dot(ctx, rnd() * W, 170 + rnd() * 700, 0.7 + rnd() * 1.5, pal.line, 0.25 + rnd() * 0.5, 0);
+    }
+    for (let i = 0; i < 4; i++) {
+      sparkle(ctx, 120 + rnd() * 840, 220 + rnd() * 520, 6 + rnd() * 8, pal.line, 0.8);
+    }
+
+    // 글자가 읽히도록 아래쪽을 어둡게
+    const ov = ctx.createLinearGradient(0, 690, 0, H);
+    ov.addColorStop(0, hex(pal.bg[1], 0));
+    ov.addColorStop(0.3, hex(pal.bg[1], 0.78));
+    ov.addColorStop(0.5, hex(pal.bg[1], 0.93));
+    ov.addColorStop(1, hex(pal.bg[1], 0.97));
+    ctx.fillStyle = ov;
+    ctx.fillRect(0, 690, W, H - 690);
+
+    addGrain(ctx, 34, 20261018 + info.n * 97);
+
+    // 얇은 테두리와 모서리 십자 표시
+    ctx.strokeStyle = hex(pal.line, 0.16);
+    ctx.lineWidth = 1;
+    ctx.strokeRect(40.5, 40.5, W - 81, H - 81);
+    ctx.strokeStyle = hex(pal.line, 0.6);
+    [[40, 40], [W - 40, 40], [40, H - 40], [W - 40, H - 40]].forEach(function (p) {
+      ctx.beginPath();
+      ctx.moveTo(p[0] - 9, p[1]);
+      ctx.lineTo(p[0] + 9, p[1]);
+      ctx.moveTo(p[0], p[1] - 9);
+      ctx.lineTo(p[0], p[1] + 9);
+      ctx.stroke();
+    });
+
+    /* 머리글 */
+    ctx.textBaseline = "alphabetic";
+    ctx.fillStyle = hex("#fff6ee", 0.95);
+    ctx.font = "600 27px " + fontDisplay;
+    trackedText(ctx, "SILVER LINING LETTER", M, 110, 6, "left");
+    ctx.fillStyle = hex(pal.line, 0.62);
+    ctx.font = "500 15px " + fontDisplay;
+    trackedText(ctx, "A LETTER FROM THE UNIVERSE", M, 138, 4.5, "left");
+    const dateStr = String(date.getDate()).padStart(2, "0") + " " + MONTHS[date.getMonth()] + " " + date.getFullYear();
+    ctx.fillStyle = hex("#fff6ee", 0.85);
+    ctx.font = "500 24px " + fontDisplay;
+    trackedText(ctx, dateStr, W - M, 110, 4, "right");
+    fadeLine(ctx, M, 166, W - M, pal.line, 0.3, 1);
+
+    /* 문장 */
+    const maxW = W - M * 2;
+    let fs = 60;
+    let lines = [];
+    outer: for (const limit of [3, 4, 5]) {
+      for (fs = 60; fs >= 40; fs -= 2) {
+        ctx.font = "500 " + fs + "px " + fontBody;
+        lines = wrapText(ctx, o.sentence || "", maxW);
+        if (lines.length <= limit) break outer;
+      }
+    }
+    const lineH = Math.round(fs * 1.46);
+    const quoteBottom = 1166;
+    const quoteTop = quoteBottom - lines.length * lineH;
+
+    // 별자리 이름
+    const labelY = quoteTop - 64;
+    ctx.fillStyle = hex(pal.accent, 0.95);
+    ctx.fillRect(M, labelY - 52, 56, 2);
+    ctx.font = "600 28px " + fontDisplay;
+    ctx.fillStyle = hex("#fff6ee", 0.96);
+    const w1 = trackedText(ctx, info.en, M, labelY, 7, "left");
+    let x = M + w1 + 24;
+    ctx.save();
+    ctx.translate(x, labelY - 9);
+    ctx.rotate(Math.PI / 4);
+    ctx.fillStyle = hex(pal.accent, 0.95);
+    ctx.fillRect(-3.5, -3.5, 7, 7);
+    ctx.restore();
+    x += 24;
+    ctx.font = "500 25px " + fontBody;
+    ctx.fillStyle = hex("#fff6ee", 0.78);
+    trackedText(ctx, o.sign, x, labelY, 2, "left");
+
+    // 문장 본문
+    ctx.save();
+    ctx.shadowColor = hex(pal.glow, 0.4);
+    ctx.shadowBlur = 30;
+    ctx.font = "500 " + fs + "px " + fontBody;
+    ctx.fillStyle = "#fff6ee";
+    ctx.textAlign = "left";
+    lines.forEach(function (ln, i) {
+      ctx.fillText(ln, M, quoteTop + i * lineH + fs);
+    });
+    ctx.restore();
+
+    /* 바닥글 */
+    fadeLine(ctx, M, 1206, W - M, pal.line, 0.26, 1);
+    const sig = String(o.signoff || "With starlight,\nThe Universe").split(/\r?\n/);
+    ctx.textAlign = "left";
+    ctx.fillStyle = hex("#fff6ee", 0.7);
+    ctx.font = "italic 500 26px " + fontDisplay;
+    ctx.fillText(sig[0] || "", M, 1252);
+    ctx.fillStyle = hex("#fff6ee", 0.96);
+    ctx.font = "italic 500 32px " + fontDisplay;
+    ctx.fillText(sig[1] || "The Universe", M, 1290);
+
+    ctx.fillStyle = hex(pal.line, 0.7);
+    ctx.font = "500 22px " + fontBody;
+    ctx.textAlign = "right";
+    ctx.fillText(o.phaseLabel || "", W - M, 1246);
+    ctx.textAlign = "left";
+    drawPhaseRow(ctx, pal, o.phaseKey, W - M - 9.5, 1276);
+
+    return canvas;
+  }
+
+  global.renderShareCard = renderShareCard;
+  global.SHARE_CARD_SIZE = { width: W, height: H };
+})(typeof window !== "undefined" ? window : globalThis);
+// ===== 공유카드 렌더러 끝 =====
+
+function getShareCardSentence(text) {
+  return text
+    .match(/[^.!?。！？]+[.!?。！？]?/g)
+    ?.map((sentence) => sentence.trim().replace(/^[“"'‘]+|[”"'’]+$/g, "").trim())
+    .find(Boolean) || "";
 }
 
-function drawShareCardBackground(context, width, height) {
-  context.fillStyle = "#0c1425";
-  context.fillRect(0, 0, width, height);
-
-  [
-    [width * 0.88, height * 0.18, width * 0.3, "rgba(255, 151, 98, 0.18)"],
-    [width * 0.16, height * 0.82, width * 0.34, "rgba(115, 127, 213, 0.2)"],
-    [width * 0.5, height * 0.42, width * 0.56, "rgba(56, 75, 115, 0.36)"],
-  ].forEach(([x, y, radius, color]) => {
-    const gradient = context.createRadialGradient(x, y, 0, x, y, radius);
-    gradient.addColorStop(0, color);
-    gradient.addColorStop(1, "rgba(12, 20, 37, 0)");
-    context.fillStyle = gradient;
-    context.fillRect(0, 0, width, height);
-  });
-
-  context.fillStyle = "rgba(244, 239, 227, 0.48)";
-  [
-    [130, 165], [920, 265], [92, 1510], [990, 1570],
-    [852, 740], [230, 1230], [1010, 1040],
-  ].forEach(([x, y], index) => {
-    context.globalAlpha = index % 2 === 0 ? 0.6 : 0.35;
-    context.beginPath();
-    context.arc(x, y, index % 3 === 0 ? 2.5 : 1.5, 0, Math.PI * 2);
-    context.fill();
-  });
-  context.globalAlpha = 1;
-
-  context.save();
-  context.translate(940, 680);
-  context.rotate(-22 * Math.PI / 180);
-  context.scale(1, 0.565);
-  context.strokeStyle = "rgba(120, 217, 229, 0.18)";
-  context.lineWidth = 1;
-  context.beginPath();
-  context.ellipse(0, 0, 460, 260, 0, 0, Math.PI * 2);
-  context.stroke();
-  context.restore();
-
-  context.strokeStyle = "rgba(255, 154, 98, 0.18)";
-  context.lineWidth = 1;
-  context.beginPath();
-  context.arc(780, 1680, 120, 0, Math.PI * 2);
-  context.stroke();
-}
-
-async function renderLetterImage(sign, today) {
+async function createLetterImage() {
   const card = result?.querySelector(".fortune-result");
-  const quote = card?.querySelector(".fortune-quote")?.textContent
-    .trim()
-    .replace(/^“|”$/g, "");
-  if (!card || !quote || !shareCardTemplate || !shareCardQuote ||
-      !shareCardSignSymbol || !shareCardSign || !shareCardDate) {
-    setFormMessage("공유카드에 필요한 편지 정보를 찾지 못했어요.");
+  if (!card) {
+    setFormMessage("먼저 오늘의 편지를 만들어 주세요.");
     return null;
   }
 
-  shareCardTemplate.style.setProperty("--zodiac-accent", zodiacShareColors[sign]);
-  shareCardSignSymbol.textContent = zodiacSymbols[sign];
-  shareCardSign.textContent = sign;
-  shareCardDate.textContent = [
-    today.getFullYear(),
-    String(today.getMonth() + 1).padStart(2, "0"),
-    String(today.getDate()).padStart(2, "0"),
-  ].join(".");
-  shareCardQuote.textContent = quote;
-
-  await Promise.allSettled([
-    document.fonts.load('700 88px "Noto Sans KR"', quote),
-    document.fonts.load('700 72px "Noto Sans KR"', quote),
-    document.fonts.load('600 40px "Noto Sans KR"', sign),
-    document.fonts.load('600 40px "Cormorant Garamond"', "With starlight, The Universe"),
-  ]);
-  await document.fonts.ready;
-  const canvas = document.createElement("canvas");
-  canvas.width = 1080;
-  canvas.height = 1920;
-  const context = canvas.getContext("2d");
-  if (!context) throw new Error("공유카드 캔버스를 준비하지 못했습니다.");
-
-  const accent = zodiacShareColors[sign];
-  const date = shareCardDate.textContent;
-  drawShareCardBackground(context, canvas.width, canvas.height);
-
-  context.fillStyle = accent;
-  context.shadowColor = "rgba(120, 217, 229, 0.2)";
-  context.shadowBlur = 22;
-  context.font = '128px "Segoe UI Symbol", "Apple Symbols", sans-serif';
-  context.textAlign = "left";
-  context.textBaseline = "middle";
-  context.fillText(zodiacSymbols[sign], 100, 336);
-  context.shadowBlur = 0;
-
-  context.fillStyle = "#f4efe3";
-  context.font = '600 40px "Noto Sans KR", sans-serif';
-  context.fillText(sign, 256, 310);
-  context.fillStyle = accent;
-  context.font = '500 38px "Noto Sans KR", sans-serif';
-  context.fillText(date, 256, 374);
-
-  const divider = context.createLinearGradient(100, 0, 980, 0);
-  divider.addColorStop(0, accent);
-  divider.addColorStop(1, "rgba(244, 239, 227, 0.2)");
-  context.fillStyle = divider;
-  context.fillRect(100, 460, 880, 1);
-
-  let quoteFontSize = 88;
-  let quoteLines = [];
-  for (; quoteFontSize >= 40; quoteFontSize -= 4) {
-    context.font = `700 ${quoteFontSize}px "Noto Sans KR", sans-serif`;
-    quoteLines = wrapCanvasText(context, quote, 880);
-    if (quoteLines.length * quoteFontSize * 1.42 <= 960) break;
-  }
-  if (quoteFontSize < 40) {
-    throw new Error("문장이 공유카드에 모두 들어갈 수 없습니다.");
+  const fontFamilies = {
+    body: '"Noto Sans KR", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+    display: '"Cormorant Garamond", Georgia, "Times New Roman", serif',
+  };
+  const quote = card.querySelector(".fortune-quote")?.textContent.trim() || "";
+  const paragraphs = [
+    quote,
+    ...[...card.querySelectorAll(".fortune-explanation")]
+      .map((element) => element.textContent.trim()),
+    card.querySelector(".closing-advice")?.textContent.trim() || "",
+  ].filter(Boolean);
+  const shareSentence = paragraphs.map(getShareCardSentence).find(Boolean);
+  if (!shareSentence) {
+    setFormMessage("편지에서 공유할 문장을 찾지 못했어요.");
+    return null;
   }
 
-  context.fillStyle = "#fbf4e9";
-  context.textAlign = "center";
-  context.textBaseline = "middle";
-  context.shadowColor = "rgba(8, 15, 32, 0.22)";
-  context.shadowBlur = 24;
-  const lineHeight = quoteFontSize * 1.42;
-  const firstLineY = 1000 - ((quoteLines.length - 1) * lineHeight) / 2;
-  quoteLines.forEach((line, index) => {
-    context.fillText(line, 540, firstLineY + index * lineHeight, 880);
+  const signoff = card.querySelector(".letter-signoff")?.textContent.trim() || "";
+  const signName = card.querySelector(".fortune-sign span:last-child")?.textContent.trim() || "";
+  const moonPhase = getLunarPhase(displayDate).phaseName; // [키, 이름]
+  const bodyFontSample = [shareSentence, signName, moonPhase[1], "오늘의 편지"].join("\n");
+  const displayFontSample = [
+    "SILVER LINING LETTER",
+    "A LETTER FROM THE UNIVERSE",
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789",
+    signoff,
+  ].join("\n");
+  if (document.fonts) {
+    try {
+      await Promise.all([
+        document.fonts.load(`500 60px ${fontFamilies.body}`, bodyFontSample),
+        document.fonts.load(`500 25px ${fontFamilies.body}`, bodyFontSample),
+        document.fonts.load(`600 28px ${fontFamilies.display}`, displayFontSample),
+        document.fonts.load(`500 24px ${fontFamilies.display}`, displayFontSample),
+        document.fonts.load(`italic 500 30px ${fontFamilies.display}`, displayFontSample),
+      ]);
+      await document.fonts.ready;
+    } catch (error) {
+      console.warn("공유카드 웹폰트를 불러오지 못해 시스템 대체 글꼴을 사용합니다.", error);
+    }
+  }
+
+  // 카드 그림은 위의 renderShareCard가 그립니다. 디자인을 바꾸려면 그 함수만 고치면 돼요.
+  const canvas = renderShareCard({
+    sign: signName,
+    date: displayDate,
+    sentence: shareSentence,
+    signoff,
+    phaseKey: moonPhase[0],
+    phaseLabel: moonPhase[1],
+    fontBody: fontFamilies.body,
+    fontDisplay: fontFamilies.display,
   });
-  context.shadowBlur = 0;
 
-  context.fillStyle = "#d5d9e1";
-  context.font = '600 40px "Cormorant Garamond", Georgia, serif';
-  context.textAlign = "center";
-  context.fillText("With starlight, The Universe", 540, 1550);
-  context.fillStyle = accent;
-  context.font = '600 34px "Noto Sans KR", sans-serif';
-  context.fillText("Silver Lining Letter", 540, 1610);
-
-  let blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
-  if (!blob) {
-    const data = canvas.toDataURL("image/png").split(",")[1];
-    const bytes = Uint8Array.from(atob(data), (character) => character.charCodeAt(0));
-    blob = new Blob([bytes], { type: "image/png" });
-  }
-  if (!blob) throw new Error("공유카드 PNG를 생성하지 못했습니다.");
-  return blob;
+  return new Promise((resolve) => {
+    canvas.toBlob((blob) => resolve(blob), "image/png");
+  });
 }
 
-async function saveLetterImage(imageBlob = shareCardBlob) {
+async function saveLetterImage(imageBlob = null) {
   let url;
   try {
-    const blob = imageBlob;
+    const blob = imageBlob || await createLetterImage();
     if (!blob) {
       setFormMessage("공유카드 이미지를 만들지 못했어요. 다시 시도해 주세요.");
       return false;
@@ -1294,38 +1656,45 @@ async function saveLetterImage(imageBlob = shareCardBlob) {
   }
 }
 
-function shareLetterImage() {
-  const blob = shareCardBlob;
-  if (!blob) {
-    setFormMessage("공유카드가 아직 준비되지 않았어요. 잠시 후 다시 시도해 주세요.");
-    return;
-  }
-
+async function shareLetterImage() {
   try {
-    const file = new File([blob], "silver-lining-letter.png", { type: "image/png" });
-    if (navigator.share && navigator.canShare?.({ files: [file] })) {
-      void navigator.share({
-        title: "Silver Lining Letter",
-        text: "A little light for your day.",
-        files: [file],
-      }).catch((error) => {
-        console.error("이미지 공유에 실패해 저장으로 전환합니다.", error);
-        setFormMessage("공유할 수 없어 이미지를 저장했어요.");
-        void saveLetterImage(blob);
-      });
+    const blob = await createLetterImage();
+    if (!blob) {
+      setFormMessage("공유카드 이미지를 만들지 못했어요. 다시 시도해 주세요.");
       return;
     }
-    setFormMessage("이 브라우저는 이미지 공유를 지원하지 않아 이미지를 저장했어요.");
-    void saveLetterImage(blob);
+
+    const file = new File([blob], "silver-lining-letter.png", {
+      type: "image/png",
+    });
+
+    if (navigator.canShare?.({ files: [file] }) && navigator.share) {
+      try {
+        await navigator.share({
+          title: "Silver Lining Letter",
+          text: "A little light for your day.",
+          files: [file],
+        });
+      } catch (error) {
+        if (error.name !== "AbortError") {
+          console.error("이미지 공유에 실패했습니다.", error);
+          setFormMessage("공유할 수 없어요. 이미지를 저장한 뒤 직접 공유해 주세요.");
+        }
+      }
+      return;
+    }
+
+    if (await saveLetterImage(blob)) {
+      setFormMessage("이 브라우저는 이미지 직접 공유를 지원하지 않아 이미지를 저장했어요.");
+    }
   } catch (error) {
-    console.error("이미지 공유를 시작하지 못해 저장으로 전환합니다.", error);
-    setFormMessage("공유할 수 없어 이미지를 저장했어요.");
-    void saveLetterImage(blob);
+    console.error("공유카드를 준비하지 못했습니다.", error);
+    setFormMessage("공유카드를 준비하지 못했어요. 다시 시도해 주세요.");
   }
 }
 
 if (saveImageButton) {
-  saveImageButton.addEventListener("click", () => saveLetterImage(shareCardBlob));
+  saveImageButton.addEventListener("click", () => saveLetterImage());
 }
 
 if (shareImageButton) {
