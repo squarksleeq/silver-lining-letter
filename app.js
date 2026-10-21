@@ -790,8 +790,8 @@ if (clearBirthdateButton) {
  *     signoff: "With starlight,\nThe Universe",
  *     phaseKey: "waxing-crescent", // 달 위상 키 (app.js의 lunarPhaseNames 키)
  *     phaseLabel: "초승달",
- *     fontBody: '"Noto Sans KR", sans-serif',
- *     fontDisplay: '"Cormorant Garamond", serif',
+ *     fontBody: '"MaruBuri", serif',
+ *     fontDisplay: '"MaruBuri", serif',
  *   });
  *
  * 디자인 규칙
@@ -1429,8 +1429,8 @@ if (clearBirthdateButton) {
     const info = SIGN_INFO[o.sign] || SIGN_INFO["물고기자리"];
     const pal = PALETTES[info.el];
     const date = o.date instanceof Date ? o.date : new Date();
-    const fontBody = o.fontBody || '"Noto Sans KR", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-    const fontDisplay = o.fontDisplay || '"Cormorant Garamond", Georgia, "Times New Roman", serif';
+    const fontBody = o.fontBody || '"MaruBuri", serif';
+    const fontDisplay = o.fontDisplay || '"MaruBuri", serif';
     const iso = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
     const rnd = rngFrom(o.sign + "|" + iso);
 
@@ -1574,8 +1574,8 @@ async function createLetterImage() {
   }
 
   const fontFamilies = {
-    body: '"Noto Sans KR", Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-    display: '"Cormorant Garamond", Georgia, "Times New Roman", serif',
+    body: '"MaruBuri", serif',
+    display: '"MaruBuri", serif',
   };
   const quote = card.querySelector(".fortune-quote")?.textContent.trim() || "";
   const paragraphs = [
