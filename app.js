@@ -780,7 +780,7 @@ if (clearBirthdateButton) {
 
 // ===== 공유카드 렌더러 (share-card/share-card.js와 같은 코드) =====
 /*
- * Silver Lining Letter - 공유카드 렌더러 (1080 x 1350)
+ * Silver Lining Letter - 공유카드 렌더러 (1080 x 1920)
  *
  * 사용법
  *   const canvas = renderShareCard({
@@ -804,9 +804,40 @@ if (clearBirthdateButton) {
 (function (global) {
   "use strict";
 
-  const W = 1080;
-  const H = 1350;
-  const M = 90; // 좌우 여백
+  const SAFE_TOP = 250;
+  const SAFE_BOTTOM = 340;
+  const CONFIG = {
+    width: 1080,
+    height: 1920,
+    margin: 96,
+    artworkScale: 0.7,
+    artworkOpacity: 0.2,
+    artworkCenterX: 540,
+    artworkSourceCenterY: 450,
+    artworkBottom: 950,
+    orbCenterX: 540,
+    orbCenterY: 625,
+    orbRadius: 164,
+    orbBloomBlur: 100,
+    quoteCenterY: 1152,
+    quoteMaxWidth: 840,
+    quoteFontMax: 88,
+    quoteFontMin: 64,
+    quoteLineHeight: 1.5,
+    quoteMaxLines: 3,
+    quoteLabelGap: 58,
+    quoteGuideGap: 44,
+    headerBrandY: SAFE_TOP + 32,
+    headerSubtitleY: SAFE_TOP + 61,
+    headerDateY: SAFE_TOP + 94,
+    footerSignoffY: 1920 - SAFE_BOTTOM - 130,
+    footerUniverseY: 1920 - SAFE_BOTTOM - 100,
+    footerPhaseLabelY: 1920 - SAFE_BOTTOM - 63,
+    footerPhaseRowY: 1920 - SAFE_BOTTOM - 30,
+  };
+  const W = CONFIG.width;
+  const H = CONFIG.height;
+  const M = CONFIG.margin;
 
   const SIGN_INFO = {
     양자리: { en: "ARIES", el: "fire", n: 0 },
@@ -1029,26 +1060,47 @@ if (clearBirthdateButton) {
   }
 
   function wrapText(ctx, text, maxW) {
-    const words = text.trim().split(/\s+/);
+    const phrases = text.trim().match(/[^,，.。!?！？;:]+[,，.。!?！？;:]?/gu) || [text.trim()];
     const lines = [];
     let line = "";
-    words.forEach(function (w) {
-      const cand = line ? line + " " + w : w;
-      if (ctx.measureText(cand).width <= maxW) {
-        line = cand;
+
+    function appendWord(word) {
+      const candidate = line ? line + " " + word : word;
+      if (ctx.measureText(candidate).width <= maxW) {
+        line = candidate;
         return;
       }
       if (line) lines.push(line);
-      let seg = "";
-      Array.from(w).forEach(function (ch) {
-        if (seg && ctx.measureText(seg + ch).width > maxW) {
-          lines.push(seg);
-          seg = ch;
+      line = "";
+      if (ctx.measureText(word).width <= maxW) {
+        line = word;
+        return;
+      }
+      let segment = "";
+      Array.from(word).forEach(function (character) {
+        if (segment && ctx.measureText(segment + character).width > maxW) {
+          lines.push(segment);
+          segment = character;
         } else {
-          seg += ch;
+          segment += character;
         }
       });
-      line = seg;
+      line = segment;
+    }
+
+    phrases.forEach(function (phrase) {
+      const trimmedPhrase = phrase.trim();
+      if (!trimmedPhrase) return;
+      const candidate = line ? line + " " + trimmedPhrase : trimmedPhrase;
+      if (ctx.measureText(candidate).width <= maxW) {
+        line = candidate;
+        return;
+      }
+      if (line) {
+        lines.push(line);
+        line = "";
+      }
+      trimmedPhrase.split(/\s+/).forEach(appendWord);
     });
     if (line) lines.push(line);
     return lines;
@@ -1059,14 +1111,16 @@ if (clearBirthdateButton) {
   function paintBackground(ctx, pal, rnd) {
     const g = ctx.createLinearGradient(0, 0, 0, H);
     g.addColorStop(0, pal.bg[0]);
-    g.addColorStop(1, pal.bg[1]);
+    g.addColorStop(0.5, pal.bg[1]);
+    g.addColorStop(0.78, "#10091e");
+    g.addColorStop(1, "#070611");
     ctx.fillStyle = g;
     ctx.fillRect(0, 0, W, H);
     for (let i = 0; i < 3; i++) {
       const x = rnd() * W;
-      const y = H * (0.08 + rnd() * 0.42);
-      const r = 380 + rnd() * 320;
-      glowAt(ctx, x, y, r, pal.stops[1 + (i % 3)], pal.bgGlow || 0.2);
+      const y = H * (0.12 + rnd() * 0.34);
+      const r = 300 + rnd() * 250;
+      glowAt(ctx, x, y, r, pal.stops[1 + (i % 3)], (pal.bgGlow || 0.2) * 0.72);
     }
   }
 
@@ -1138,17 +1192,6 @@ if (clearBirthdateButton) {
     ctx.restore();
     chromaRim(ctx, cx, cy, R, R, pal, 1.6, 0.8);
 
-    // 아래로 번지는 가로선과 점 기둥
-    let ly = cy + R + 34;
-    let step = 15;
-    for (let i = 0; i < 9; i++) {
-      fadeLine(ctx, M - 20, ly, W - M + 20, pal.line, 0.55 - i * 0.05, 1.5 - i * 0.1);
-      ly += step;
-      step *= 0.97;
-    }
-    for (let i = 0; i < 9; i++) {
-      dot(ctx, cx, cy + R + 44 + i * 21, 8 - i * 0.7, pal.stops[2], 0.95, 14);
-    }
     // 궤도 위의 작은 점
     for (let i = 0; i < 3; i++) {
       const a = rnd() * Math.PI * 2;
@@ -1352,6 +1395,107 @@ if (clearBirthdateButton) {
 
   const ART = { fire: artFire, earth: artEarth, air: artAir, water: artWater };
 
+  function drawHeroOrb(ctx, pal) {
+    const cx = CONFIG.orbCenterX;
+    const cy = CONFIG.orbCenterY;
+    const r = CONFIG.orbRadius;
+
+    glowAt(ctx, cx, cy, r * 2.25, pal.glow, 0.16);
+    ctx.save();
+    ctx.shadowColor = "rgba(255, 157, 197, 0.3)";
+    ctx.shadowBlur = CONFIG.orbBloomBlur;
+    ctx.fillStyle = "rgba(255, 179, 167, 0.13)";
+    ctx.beginPath();
+    ctx.arc(cx, cy, r * 0.88, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    const base = ctx.createLinearGradient(cx - r, cy - r, cx + r, cy + r);
+    base.addColorStop(0, pal.stops[4]);
+    base.addColorStop(0.28, pal.stops[3]);
+    base.addColorStop(0.55, pal.stops[1]);
+    base.addColorStop(0.78, pal.stops[2]);
+    base.addColorStop(1, pal.stops[0]);
+    ctx.fillStyle = base;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(cx, cy, r - 1, 0, Math.PI * 2);
+    ctx.clip();
+    [
+      [cx - r * 0.28, cy - r * 0.35, "rgba(211, 200, 255, 0.18)"],
+      [cx + r * 0.35, cy - r * 0.08, "rgba(169, 240, 216, 0.14)"],
+      [cx + r * 0.04, cy + r * 0.38, "rgba(255, 179, 167, 0.17)"],
+    ].forEach(function (sheen) {
+      const glow = ctx.createRadialGradient(sheen[0], sheen[1], 0, sheen[0], sheen[1], r * 1.1);
+      glow.addColorStop(0, sheen[2]);
+      glow.addColorStop(1, "rgba(255,255,255,0)");
+      ctx.fillStyle = glow;
+      ctx.fillRect(cx - r, cy - r, r * 2, r * 2);
+    });
+
+    const shade = ctx.createRadialGradient(cx - r * 0.32, cy - r * 0.38, r * 0.04, cx, cy, r);
+    shade.addColorStop(0, "rgba(255, 250, 244, 0.28)");
+    shade.addColorStop(0.36, "rgba(255, 246, 239, 0.06)");
+    shade.addColorStop(1, "rgba(8, 5, 24, 0.28)");
+    ctx.fillStyle = shade;
+    ctx.fillRect(cx - r, cy - r, r * 2, r * 2);
+    ctx.restore();
+
+    ctx.strokeStyle = "rgba(255, 249, 242, 0.78)";
+    ctx.lineWidth = 1.6;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r - 0.8, 0, Math.PI * 2);
+    ctx.stroke();
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.42)";
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.ellipse(cx - r * 0.12, cy - r * 0.1, r * 0.94, r * 0.98, -0.12, Math.PI * 1.08, Math.PI * 1.84);
+    ctx.stroke();
+  }
+
+  function drawTextVignette(ctx) {
+    const gradient = ctx.createRadialGradient(
+      W / 2,
+      CONFIG.quoteCenterY,
+      80,
+      W / 2,
+      CONFIG.quoteCenterY,
+      680
+    );
+    gradient.addColorStop(0, "rgba(7, 5, 20, 0.52)");
+    gradient.addColorStop(0.56, "rgba(7, 5, 20, 0.3)");
+    gradient.addColorStop(1, "rgba(7, 5, 20, 0)");
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, W, H);
+  }
+
+  function drawLightGuide(ctx, pal, endY) {
+    const x = CONFIG.orbCenterX;
+    const startY = CONFIG.orbCenterY + CONFIG.orbRadius + 22;
+    const finalY = Math.max(startY + 12, endY);
+    const beam = ctx.createLinearGradient(x, startY, x, finalY);
+    beam.addColorStop(0, hex(pal.accent, 0.24));
+    beam.addColorStop(1, hex(pal.accent, 0));
+    ctx.strokeStyle = beam;
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x, startY);
+    ctx.lineTo(x, finalY);
+    ctx.stroke();
+
+    const count = 10;
+    for (let i = 0; i < count; i++) {
+      const progress = i / (count - 1);
+      const y = startY + (finalY - startY) * progress;
+      const radius = 5.4 - progress * 3.8;
+      dot(ctx, x, y, radius, pal.stops[3], 0.82 - progress * 0.48, 8 - progress * 5);
+    }
+  }
+
   /* ---------- 달 위상 (아래쪽 작은 줄) ---------- */
 
   const PHASE_KEYS = [
@@ -1438,32 +1582,31 @@ if (clearBirthdateButton) {
     const ctx = canvas.getContext("2d");
 
     paintBackground(ctx, pal, rnd);
+    ctx.save();
+    ctx.beginPath();
+    ctx.rect(0, SAFE_TOP, W, CONFIG.artworkBottom - SAFE_TOP);
+    ctx.clip();
+    ctx.globalAlpha = CONFIG.artworkOpacity;
+    ctx.translate(CONFIG.artworkCenterX, CONFIG.orbCenterY);
+    ctx.scale(CONFIG.artworkScale, CONFIG.artworkScale);
+    ctx.translate(-CONFIG.artworkCenterX, -CONFIG.artworkSourceCenterY);
     ART[info.el](ctx, pal, rnd, info.n);
+    ctx.restore();
 
-    // 반짝이는 별가루
-    for (let i = 0; i < 46; i++) {
-      dot(ctx, rnd() * W, 170 + rnd() * 700, 0.7 + rnd() * 1.5, pal.line, 0.25 + rnd() * 0.5, 0);
+    for (let i = 0; i < 38; i++) {
+      dot(ctx, rnd() * W, SAFE_TOP + rnd() * 700, 0.7 + rnd() * 1.4, pal.line, 0.2 + rnd() * 0.38, 0);
     }
-    for (let i = 0; i < 4; i++) {
-      sparkle(ctx, 120 + rnd() * 840, 220 + rnd() * 520, 6 + rnd() * 8, pal.line, 0.8);
-    }
-
-    // 글자가 읽히도록 아래쪽을 어둡게
-    const ov = ctx.createLinearGradient(0, 690, 0, H);
-    ov.addColorStop(0, hex(pal.bg[1], 0));
-    ov.addColorStop(0.3, hex(pal.bg[1], 0.78));
-    ov.addColorStop(0.5, hex(pal.bg[1], 0.93));
-    ov.addColorStop(1, hex(pal.bg[1], 0.97));
-    ctx.fillStyle = ov;
-    ctx.fillRect(0, 690, W, H - 690);
-
+    sparkle(ctx, 112, 560, 8, pal.line, 0.56);
+    sparkle(ctx, W - 112, 830, 7, pal.line, 0.5);
+    drawHeroOrb(ctx, pal);
+    drawTextVignette(ctx);
     addGrain(ctx, 34, 20261018 + info.n * 97);
 
     // 얇은 테두리와 모서리 십자 표시
-    ctx.strokeStyle = hex(pal.line, 0.16);
+    ctx.strokeStyle = hex(pal.line, 0.08);
     ctx.lineWidth = 1;
     ctx.strokeRect(40.5, 40.5, W - 81, H - 81);
-    ctx.strokeStyle = hex(pal.line, 0.6);
+    ctx.strokeStyle = hex(pal.line, 0.28);
     [[40, 40], [W - 40, 40], [40, H - 40], [W - 40, H - 40]].forEach(function (p) {
       ctx.beginPath();
       ctx.moveTo(p[0] - 9, p[1]);
@@ -1473,83 +1616,90 @@ if (clearBirthdateButton) {
       ctx.stroke();
     });
 
-    /* 머리글 */
     ctx.textBaseline = "alphabetic";
-    ctx.fillStyle = hex("#fff6ee", 0.95);
-    ctx.font = "600 27px " + fontDisplay;
-    trackedText(ctx, "SILVER LINING LETTER", M, 110, 6, "left");
-    ctx.fillStyle = hex(pal.line, 0.62);
-    ctx.font = "500 15px " + fontDisplay;
-    trackedText(ctx, "A LETTER FROM THE UNIVERSE", M, 138, 4.5, "left");
+    ctx.textAlign = "center";
+    ctx.fillStyle = hex("#fff6ee", 0.43);
+    ctx.font = "600 17px " + fontDisplay;
+    trackedText(ctx, "SILVER LINING LETTER", W / 2, CONFIG.headerBrandY, 3.2, "center");
+    ctx.fillStyle = hex(pal.line, 0.48);
+    ctx.font = "400 14px " + fontDisplay;
+    trackedText(ctx, "A LETTER FROM THE UNIVERSE", W / 2, CONFIG.headerSubtitleY, 2.5, "center");
     const dateStr = String(date.getDate()).padStart(2, "0") + " " + MONTHS[date.getMonth()] + " " + date.getFullYear();
-    ctx.fillStyle = hex("#fff6ee", 0.85);
-    ctx.font = "500 24px " + fontDisplay;
-    trackedText(ctx, dateStr, W - M, 110, 4, "right");
-    fadeLine(ctx, M, 166, W - M, pal.line, 0.3, 1);
+    ctx.fillStyle = hex("#fff6ee", 0.48);
+    ctx.font = "400 16px " + fontDisplay;
+    trackedText(ctx, dateStr, W / 2, CONFIG.headerDateY, 2, "center");
+    fadeLine(ctx, M + 150, SAFE_TOP + 118, W - M - 150, pal.line, 0.14, 1);
 
-    /* 문장 */
-    const maxW = W - M * 2;
-    let fs = 60;
+    let fs = CONFIG.quoteFontMax;
     let lines = [];
-    outer: for (const limit of [3, 4, 5]) {
-      for (fs = 60; fs >= 40; fs -= 2) {
-        ctx.font = "500 " + fs + "px " + fontBody;
-        lines = wrapText(ctx, o.sentence || "", maxW);
-        if (lines.length <= limit) break outer;
+    for (let candidateSize = CONFIG.quoteFontMax; candidateSize >= CONFIG.quoteFontMin; candidateSize -= 2) {
+      ctx.font = "600 " + candidateSize + "px " + fontBody;
+      const candidateLines = wrapText(ctx, o.sentence || "", CONFIG.quoteMaxWidth);
+      if (candidateLines.length <= CONFIG.quoteMaxLines || candidateSize === CONFIG.quoteFontMin) {
+        fs = candidateSize;
+        lines = candidateLines;
+        break;
       }
     }
-    const lineH = Math.round(fs * 1.46);
-    const quoteBottom = 1166;
-    const quoteTop = quoteBottom - lines.length * lineH;
+    const lineH = Math.round(fs * CONFIG.quoteLineHeight);
+    const textBlockHeight = Math.max(0, (lines.length - 1) * lineH) + fs;
+    const textTop = CONFIG.quoteCenterY - textBlockHeight / 2;
+    const firstBaseline = textTop + fs;
+    const labelY = textTop - CONFIG.quoteLabelGap;
+    drawLightGuide(ctx, pal, labelY - CONFIG.quoteGuideGap);
 
-    // 별자리 이름
-    const labelY = quoteTop - 64;
-    ctx.fillStyle = hex(pal.accent, 0.95);
-    ctx.fillRect(M, labelY - 52, 56, 2);
-    ctx.font = "600 28px " + fontDisplay;
-    ctx.fillStyle = hex("#fff6ee", 0.96);
-    const w1 = trackedText(ctx, info.en, M, labelY, 7, "left");
-    let x = M + w1 + 24;
-    ctx.save();
-    ctx.translate(x, labelY - 9);
-    ctx.rotate(Math.PI / 4);
-    ctx.fillStyle = hex(pal.accent, 0.95);
-    ctx.fillRect(-3.5, -3.5, 7, 7);
-    ctx.restore();
-    x += 24;
-    ctx.font = "500 25px " + fontBody;
-    ctx.fillStyle = hex("#fff6ee", 0.78);
-    trackedText(ctx, o.sign, x, labelY, 2, "left");
-
-    // 문장 본문
-    ctx.save();
-    ctx.shadowColor = hex(pal.glow, 0.4);
-    ctx.shadowBlur = 30;
-    ctx.font = "500 " + fs + "px " + fontBody;
-    ctx.fillStyle = "#fff6ee";
     ctx.textAlign = "left";
+    ctx.font = "600 19px " + fontDisplay;
+    const englishLabel = info.en;
+    const signLabel = o.sign || "";
+    const diamondGap = 13;
+    const englishWidth = ctx.measureText(englishLabel).width;
+    const signWidth = ctx.measureText(signLabel).width;
+    let labelX = (W - englishWidth - diamondGap * 2 - signWidth) / 2;
+    ctx.fillStyle = hex(pal.accent, 0.92);
+    ctx.fillText(englishLabel, labelX, labelY);
+    labelX += englishWidth + diamondGap;
+    ctx.fillStyle = hex(pal.accent, 0.8);
+    ctx.fillText("◆", labelX, labelY);
+    labelX += diamondGap + 10;
+    ctx.font = "600 20px " + fontBody;
+    ctx.fillStyle = hex("#fff6ee", 0.76);
+    ctx.fillText(signLabel, labelX, labelY);
+
+    ctx.textAlign = "center";
+    ctx.font = "600 " + fs + "px " + fontBody;
+    ctx.save();
+    ctx.shadowColor = "rgba(255, 151, 184, 0.42)";
+    ctx.shadowBlur = 48;
     lines.forEach(function (ln, i) {
-      ctx.fillText(ln, M, quoteTop + i * lineH + fs);
+      trackedText(ctx, ln, W / 2, firstBaseline + i * lineH, -fs * 0.01, "center");
+    });
+    ctx.shadowColor = "rgba(255, 174, 126, 0.32)";
+    ctx.shadowBlur = 20;
+    lines.forEach(function (ln, i) {
+      trackedText(ctx, ln, W / 2, firstBaseline + i * lineH, -fs * 0.01, "center");
+    });
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = "#fff5eb";
+    lines.forEach(function (ln, i) {
+      trackedText(ctx, ln, W / 2, firstBaseline + i * lineH, -fs * 0.01, "center");
     });
     ctx.restore();
 
-    /* 바닥글 */
-    fadeLine(ctx, M, 1206, W - M, pal.line, 0.26, 1);
     const sig = String(o.signoff || "With starlight,\nThe Universe").split(/\r?\n/);
     ctx.textAlign = "left";
-    ctx.fillStyle = hex("#fff6ee", 0.7);
-    ctx.font = "italic 500 26px " + fontDisplay;
-    ctx.fillText(sig[0] || "", M, 1252);
-    ctx.fillStyle = hex("#fff6ee", 0.96);
-    ctx.font = "italic 500 32px " + fontDisplay;
-    ctx.fillText(sig[1] || "The Universe", M, 1290);
+    ctx.fillStyle = hex("#fff6ee", 0.54);
+    ctx.font = "400 19px " + fontDisplay;
+    ctx.textAlign = "center";
+    ctx.fillText(sig[0] || "", W / 2, CONFIG.footerSignoffY);
+    ctx.fillStyle = hex("#fff6ee", 0.72);
+    ctx.font = "400 21px " + fontDisplay;
+    ctx.fillText(sig[1] || "The Universe", W / 2, CONFIG.footerUniverseY);
 
-    ctx.fillStyle = hex(pal.line, 0.7);
-    ctx.font = "500 22px " + fontBody;
-    ctx.textAlign = "right";
-    ctx.fillText(o.phaseLabel || "", W - M, 1246);
-    ctx.textAlign = "left";
-    drawPhaseRow(ctx, pal, o.phaseKey, W - M - 9.5, 1276);
+    ctx.fillStyle = hex(pal.line, 0.54);
+    ctx.font = "400 16px " + fontBody;
+    ctx.fillText(o.phaseLabel || "", W / 2, CONFIG.footerPhaseLabelY);
+    drawPhaseRow(ctx, pal, o.phaseKey, W / 2 + 119, CONFIG.footerPhaseRowY);
 
     return canvas;
   }
@@ -1600,20 +1750,14 @@ async function createLetterImage() {
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789",
     signoff,
   ].join("\n");
-  if (document.fonts) {
-    try {
-      await Promise.all([
-        document.fonts.load(`500 60px ${fontFamilies.body}`, bodyFontSample),
-        document.fonts.load(`500 25px ${fontFamilies.body}`, bodyFontSample),
-        document.fonts.load(`600 28px ${fontFamilies.display}`, displayFontSample),
-        document.fonts.load(`500 24px ${fontFamilies.display}`, displayFontSample),
-        document.fonts.load(`italic 500 30px ${fontFamilies.display}`, displayFontSample),
-      ]);
-      await document.fonts.ready;
-    } catch (error) {
-      console.warn("공유카드 웹폰트를 불러오지 못해 시스템 대체 글꼴을 사용합니다.", error);
-    }
-  }
+  await Promise.all([
+    document.fonts.load(`600 88px ${fontFamilies.body}`, bodyFontSample),
+    document.fonts.load(`600 64px ${fontFamilies.body}`, bodyFontSample),
+    document.fonts.load(`600 20px ${fontFamilies.body}`, bodyFontSample),
+    document.fonts.load(`600 19px ${fontFamilies.display}`, displayFontSample),
+    document.fonts.load(`400 21px ${fontFamilies.display}`, displayFontSample),
+  ]);
+  await document.fonts.ready;
 
   // 카드 그림은 위의 renderShareCard가 그립니다. 디자인을 바꾸려면 그 함수만 고치면 돼요.
   const canvas = renderShareCard({
